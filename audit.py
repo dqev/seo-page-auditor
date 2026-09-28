@@ -119,24 +119,36 @@ def tf_agent_render_check(url: str) -> dict | None:
 
 # ---------------------------------------------------------------- Raw HTML ---
 
-def fetch_raw_html(url: str, timeout: int = 25) -> str:
+def fetch_raw_html(url: str, timeout: int = 25) -> tuple[str, str]:
     """Live raw-HTML ground truth (stdlib urllib, no key needed).
 
+    Returns (body, content_type). Non-HTML content (PDF, images…) returns
+    ("", content_type) so tag checks can SKIP honestly instead of failing.
     TinyFish Fetch returns *cleaned* HTML (boilerplate stripped, tags like
     <html lang>, canonical, OG, JSON-LD often removed). Comparing raw source
     vs the AI-extracted view is exactly what surfaces "page has it, but AI
-    tools can't see it" gaps. Returns "" on failure (checks fall back to
-    Fetch data and note the limitation).
+    tools can't see it" gaps. Returns ("", "") on failure (checks fall back
+    to Fetch data and note the limitation).
     """
     try:
+        # Quote non-ASCII path/query (e.g. /wiki/भारत) — urllib needs ASCII.
+        parts = urllib.parse.urlsplit(url)
+        safe_url = urllib.parse.urlunsplit((
+            parts.scheme, parts.netloc,
+            urllib.parse.quote(parts.path, safe="/%"),
+            urllib.parse.quote(parts.query, safe="=&%"),
+            parts.fragment))
         req = urllib.request.Request(
-            url, headers={"User-Agent": "Mozilla/5.0 (SEO-Page-Auditor bounty demo)"})
+            safe_url, headers={"User-Agent": "Mozilla/5.0 (SEO-Page-Auditor bounty demo)"})
         with urllib.request.urlopen(req, timeout=timeout) as r:
+            ctype = (r.headers.get_content_type() or "").lower()
+            if ctype and "html" not in ctype and "xhtml" not in ctype:
+                return "", ctype
             raw = r.read().decode("utf-8", "replace")
-        return raw[:2_000_000]  # generous: real <h1> can sit past 500k on script-heavy pages
+        return raw[:2_000_000], ctype  # generous: real <h1> can sit past 500k on script-heavy pages
     except Exception as e:
         print(f"[warn] raw HTML fetch failed ({e}); tag checks use Fetch data.", file=sys.stderr)
-        return ""
+        return "", ""
 
 
 # ---------------------------------------------------------------- HTML parse ---
@@ -266,9 +278,11 @@ def domain_of(url: str) -> str:
         return ""
 
 
-def check(title: str, passed: bool, detail: str, fix: str) -> dict:
-    return {"check": title, "status": "PASS" if passed else "FAIL",
-            "detail": detail, "fix": fix if not passed else ""}
+def check(title: str, passed: bool | None, detail: str, fix: str) -> dict:
+    """passed=True→PASS, False→FAIL, None→SKIP (not applicable, excluded from score)."""
+    status = "SKIP" if passed is None else ("PASS" if passed else "FAIL")
+    return {"check": title, "status": status,
+            "detail": detail, "fix": fix if status == "FAIL" else ""}
 
 
 def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
@@ -292,7 +306,10 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
     links = md.get("links", []) or []
 
     parsed = parse_html(html_raw, host)          # AI-extracted view (cleaned)
-    raw_source = fetch_raw_html(url)               # ground truth (live raw HTML)
+    raw_source, raw_ctype = fetch_raw_html(url)  # ground truth (live raw HTML)
+    non_html = bool(raw_ctype) and "html" not in raw_ctype and "xhtml" not in raw_ctype
+    if non_html:
+        raw_source = ""  # don't parse binaries as HTML
     raw = parse_html(raw_source, host) if raw_source else parsed
     title = parsed.title or raw.title or md_title
     h1s = parsed.h1
@@ -330,21 +347,28 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
 
     checks: list[dict] = []
 
+    # Non-HTML URLs (PDF, images…): HTML-tag checks SKIP honestly instead of failing.
+    def tag_check(title: str, ok: bool, detail: str, fix: str) -> dict:
+        if non_html:
+            return check(title, None,
+                         f"Skipped — URL serves {raw_ctype or 'non-HTML content'}; HTML tags don't apply.", "")
+        return check(title, ok, detail, fix)
+
     # --- readability for AI tools (Fetch side) ---
-    checks.append(check(
+    checks.append(tag_check(
         "AI-extractable title",
         bool(title.strip()),
         f"Fetch title: {title[:80]!r}" if title else "Fetch returned no <title>.",
         "Add a unique <title> (30–60 chars, include target query). AI tools + search use it as the headline.",
     ))
     tl = len(title)
-    checks.append(check(
+    checks.append(tag_check(
         "Title length 30–60 chars",
         30 <= tl <= 60,
         f"Title is {tl} chars: {title[:80]!r}.",
         f"Rewrite title to 30–60 chars. Keep query near front. Current: {title[:100]!r}.",
     ))
-    checks.append(check(
+    checks.append(tag_check(
         "AI-visible H1",
         len(h1s) >= 1,
         f"Found {len(h1s)} H1(s): {[h[:60] for h in h1s]}." if h1s
@@ -353,7 +377,7 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
         "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
     ))
     if len(raw_h1s) > 1:
-        checks.append(check(
+        checks.append(tag_check(
             "Single H1",
             False,
             f"{len(raw_h1s)} H1s in raw HTML: {[h[:50] for h in raw_h1s[:3]]}.",
@@ -365,38 +389,38 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
         f"Fetch extracted {words} words.",
         "Expand real content to ≥300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
     ))
-    checks.append(check(
+    checks.append(tag_check(
         "Meta description present",
         bool((raw.meta.get("description") or md_desc or "").strip()),
         f"Meta description: {(raw.meta.get('description') or md_desc or '')[:120]!r}.",
         "Add <meta name=\"description\" content=\"...query-led 140–160 chars...\">. Controls the search snippet.",
     ))
-    checks.append(check(
+    checks.append(tag_check(
         "Images have alt text",
         raw.img_missing_alt == 0,
         f"{raw.img_total} img(s) in raw HTML, {raw.img_missing_alt} missing alt." if raw.img_total else "No <img> in raw HTML.",
         f"Add descriptive alt to {raw.img_missing_alt} image(s). AI tools + image search read alt, not pixels.",
     ))
-    checks.append(check(
+    checks.append(tag_check(
         "Structured data (JSON-LD)",
         raw.jsonld_count > 0,
         f"Found {raw.jsonld_count} JSON-LD block(s) in raw HTML." if raw.jsonld_count else "No application/ld+json in raw HTML (Fetch extraction also drops it — AI can't see entities).",
         "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
     ))
-    checks.append(check(
+    checks.append(tag_check(
         "Canonical tag",
         bool(raw.canonical),
         f"Canonical: {raw.canonical!r}." if raw.canonical else "No rel=canonical in raw HTML.",
         "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
     ))
     og = any(k.startswith("og:") for k in raw.meta)
-    checks.append(check(
+    checks.append(tag_check(
         "Open Graph tags (link previews / AI citations)",
         og,
         "og:* tags present in raw HTML." if og else "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
         "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
     ))
-    checks.append(check(
+    checks.append(tag_check(
         "html lang attribute",
         bool(raw.html_lang),
         f"lang={raw.html_lang!r} (raw HTML)." if raw.html_lang else "No <html lang> in raw HTML.",
@@ -415,7 +439,7 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
     thin_ratio = (len(text) / max(html_len, 1))
     if raw_words >= 300 and words < 300:
         dropped = 100 * (1 - words / max(raw_words, 1))
-        checks.append(check(
+        checks.append(tag_check(
             "Fetch keeps page copy (no extraction drop)",
             False,
             f"Raw HTML holds ~{raw_words} words but Fetch extracts {words} ({dropped:.0f}% dropped). "
@@ -424,14 +448,14 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
             "Re-run audit to confirm extracted words rise.",
         ))
     elif raw_words < 100 and raw_len > 50_000:
-        checks.append(check(
+        checks.append(tag_check(
             "Content in initial HTML (not JS-only)",
             False,
             f"Ships {raw_len // 1000}kb of HTML/JS but only ~{raw_words} raw words ({words} extracted). Likely client-rendered.",
             "Server-render (or pre-render) H1 + first 200 words. Verify: view-source should contain the H1 text.",
         ))
     else:
-        checks.append(check(
+        checks.append(tag_check(
             "Content in initial HTML (not JS-only)",
             True,
             f"Extracted {len(text)} chars from {html_len} chars cleaned HTML (ratio {thin_ratio:.2f}); raw ~{raw_words} words.",
@@ -502,7 +526,8 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
             ))
 
     fails = [c for c in checks if c["status"] == "FAIL"]
-    score = round(100 * (len(checks) - len(fails)) / max(len(checks), 1))
+    scored = [c for c in checks if c["status"] != "SKIP"]
+    score = round(100 * (len(scored) - len(fails)) / max(len(scored), 1))
 
     return {
         "url": url, "final_url": md.get("final_url", url),
@@ -538,7 +563,7 @@ def report_md(r: dict) -> str:
                  f"(gap {a['gap_chars']}). {'⚠️ rendered sees MORE — JS gap.' if a['rendered_sees_more'] else 'OK — matches.'}")
     L.append("\n## Checks\n")
     for c in r["checks"]:
-        icon = "✅" if c["status"] == "PASS" else "❌"
+        icon = {"PASS": "✅", "FAIL": "❌"}.get(c["status"], "➖")
         L.append(f"### {icon} {c['check']}")
         L.append(f"{c['detail']}")
         if c["status"] == "FAIL" and c["fix"]:
