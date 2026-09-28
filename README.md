@@ -50,8 +50,10 @@ python audit.py https://example.com --query "example domain"
 python audit.py https://example.com --query "example domain" --out demo-example.md
 python audit.py https://www.semrush.com/siteaudit/ --query "free seo audit tool" --out demo-semrush.md
 python audit.py https://developers.google.com/search/blog/2018/02/seo-audit-category-in-lighthouse --query "lighthouse seo audit" --out demo-lighthouse.md
+python audit.py https://reicon.dev --query "reicon free icons" --out demo-reicon.md
+python audit.py https://devchauhan.in --query "Devpratap Chauhan" --out demo-portfolio.md
 # with rendered check (metered, slower):
-python audit.py https://example.com --query "example domain" --with-agent --out demo-agent.md
+python audit.py https://devchauhan.in --query "Devpratap Chauhan" --with-agent --out demo-portfolio-agent.md
 ```
 
 See `demo-*.md` reports for what AI tools can/can't read per page.

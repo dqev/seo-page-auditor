@@ -8,11 +8,11 @@ Raw H1: `['Launching SEO Audit category in Lighthouse Chrome extension']` · AI-
 ## Checks
 
 ### ✅ AI-extractable title
-Fetch title: 'Launching SEO Audit category in Lighthouse Chrome extension  |  Google Search Ce'
+Fetch title: 'Launching SEO Audit category in Lighthouse Chrome extension | Google Search Cent'
 
 ### ❌ Title length 30–60 chars
-Title is 116 chars: 'Launching SEO Audit category in Lighthouse Chrome extension  |  Google Search Ce'.
-**Fix:** Rewrite title to 30–60 chars. Keep query near front. Current: 'Launching SEO Audit category in Lighthouse Chrome extension  |  Google Search Central Blog  |  Googl'.
+Title is 112 chars: 'Launching SEO Audit category in Lighthouse Chrome extension | Google Search Cent'.
+**Fix:** Rewrite title to 30–60 chars. Keep query near front. Current: 'Launching SEO Audit category in Lighthouse Chrome extension | Google Search Central Blog | Google fo'.
 
 ### ✅ AI-visible H1
 Found 1 H1(s): ['Launching SEO Audit category in Lighthouse Chrome extension'].
@@ -43,7 +43,7 @@ lang='en' (raw HTML).
 Fetch links: 1862 (internal≈1828, external≈34).
 
 ### ✅ Content in initial HTML (not JS-only)
-Extracted 3826 chars from 3636 chars HTML (ratio 1.05).
+Extracted 3826 chars from 3636 chars cleaned HTML (ratio 1.05); raw ~13056 words.
 
 ### ✅ Indexed & ranking for query (pos 4)
 Query 'lighthouse seo audit' → https://developers.google.com/search/blog/2018/02/seo-audit-category-in-lighthouse at position 4. Snippet: 'Lighthouse is an open-source, automated auditing tool for improving the quality of web pages. It provides a well-lit path for improving the '.
@@ -53,7 +53,7 @@ All key terms ['lighthouse', 'audit'] appear in title/snippet/body.
 
 ## Fix today (priority order)
 
-1. Rewrite title to 30–60 chars. Keep query near front. Current: 'Launching SEO Audit category in Lighthouse Chrome extension  |  Google Search Central Blog  |  Googl'.
+1. Rewrite title to 30–60 chars. Keep query near front. Current: 'Launching SEO Audit category in Lighthouse Chrome extension | Google Search Central Blog | Google fo'.
 2. Add <meta name="description" content="...query-led 140–160 chars...">. Controls the search snippet.
 
 ---

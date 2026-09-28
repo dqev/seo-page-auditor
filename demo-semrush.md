@@ -42,7 +42,7 @@ lang='en' (raw HTML).
 Fetch links: 144 (internal≈136, external≈8).
 
 ### ✅ Content in initial HTML (not JS-only)
-Extracted 12488 chars from 13423 chars HTML (ratio 0.93).
+Extracted 12488 chars from 13423 chars cleaned HTML (ratio 0.93); raw ~2396 words.
 
 ### ✅ Indexed & ranking for query (pos 2)
 Query 'free seo audit tool' → https://www.semrush.com/siteaudit/ at position 2. Snippet: "Semrush's SEO Checker is a free SEO audit tool that scans your website and finds critical SEO issues that could limit your search performanc".

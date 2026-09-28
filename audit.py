@@ -176,6 +176,9 @@ class _Meta(HTMLParser):
             self._skip = True
         if tag == "svg":
             self._svg_depth += 1
+        # Pad captured headings so nested tags don't glue words ("library<span>designers").
+        if self._in_title or self._in_h1 or self._in_h2:
+            self._buf += " "
         if tag == "html" and "lang" in a:
             self.html_lang = a["lang"]
         if tag == "title":
@@ -220,14 +223,14 @@ class _Meta(HTMLParser):
         if tag == "svg" and self._svg_depth > 0:
             self._svg_depth -= 1
         if tag == "title" and self._in_title:
-            self.title = self._buf.strip().replace("\xa0", " ")
+            self.title = " ".join(self._buf.split()).replace("\xa0", " ")
             self._in_title = False
             self._title_done = True
         elif tag == "h1" and self._in_h1:
-            self.h1.append(self._buf.strip().replace("\xa0", " "))
+            self.h1.append(" ".join(self._buf.split()).replace("\xa0", " "))
             self._in_h1 = False
         elif tag == "h2" and self._in_h2:
-            self.h2.append(self._buf.strip().replace("\xa0", " "))
+            self.h2.append(" ".join(self._buf.split()).replace("\xa0", " "))
             self._in_h2 = False
 
     def handle_data(self, data):
@@ -405,17 +408,35 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
         f"Fetch links: {len(links)} (internal≈{n_internal}, external≈{n_external}).",
         "Add ≥3 contextual internal links to related pages with descriptive anchors; link out to 1–2 authoritative sources.",
     ))
-    # JS-gap heuristic: lots of HTML, little extracted text.
+    # Extraction gap: raw source vs what Fetch hands to AI tools.
     html_len = len(html_raw)
+    raw_len = len(raw_source)
+    raw_words = raw.word_count_html if raw_source else words
     thin_ratio = (len(text) / max(html_len, 1))
-    js_risk = words < 300 and html_len > 30_000
-    checks.append(check(
-        "Content in initial HTML (not JS-only)",
-        not js_risk,
-        f"Extracted {len(text)} chars from {html_len} chars HTML (ratio {thin_ratio:.2f})."
-        + (" Low ratio + thin text ⇒ likely client-rendered." if js_risk else ""),
-        "Server-render (or pre-render) H1 + first 200 words. Verify: view-source should contain the H1 text.",
-    ))
+    if raw_words >= 300 and words < 300:
+        dropped = 100 * (1 - words / max(raw_words, 1))
+        checks.append(check(
+            "Fetch keeps page copy (no extraction drop)",
+            False,
+            f"Raw HTML holds ~{raw_words} words but Fetch extracts {words} ({dropped:.0f}% dropped). "
+            f"Copy exists yet never reaches AI readers — hero is likely canvas/animated/shadow-DOM markup.",
+            "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). "
+            "Re-run audit to confirm extracted words rise.",
+        ))
+    elif raw_words < 100 and raw_len > 50_000:
+        checks.append(check(
+            "Content in initial HTML (not JS-only)",
+            False,
+            f"Ships {raw_len // 1000}kb of HTML/JS but only ~{raw_words} raw words ({words} extracted). Likely client-rendered.",
+            "Server-render (or pre-render) H1 + first 200 words. Verify: view-source should contain the H1 text.",
+        ))
+    else:
+        checks.append(check(
+            "Content in initial HTML (not JS-only)",
+            True,
+            f"Extracted {len(text)} chars from {html_len} chars cleaned HTML (ratio {thin_ratio:.2f}); raw ~{raw_words} words.",
+            "",
+        ))
 
     # --- visibility (Search side) ---
     if matched:
@@ -461,11 +482,15 @@ def audit(url: str, query: str | None, with_agent: bool = False) -> dict:
             agent_cmp = {"agent": agent_data, "fetch_chars": len(text),
                          "gap_chars": gap, "rendered_sees_more": rendered_sees_more,
                          "h1_hidden": h1_hidden}
+            detail = (f"Fetch: {len(text)} chars vs rendered: {a_chars} chars (gap {gap}). Agent H1: {a_h1[:80]!r}."
+                      if a_chars else f"Agent returned: {str(agent_data)[:200]!r}.")
+            if a_h1 and not h1s:
+                detail += (f" Rendered browser sees H1 {a_h1[:60]!r} that Fetch extraction drops"
+                           + (" (matches raw HTML — see 'AI-visible H1' fix)." if raw_h1s else " (also missing from raw HTML)."))
             checks.append(check(
                 "Rendered browser ≈ Fetch (no hidden JS content)",
                 not rendered_sees_more,
-                f"Fetch: {len(text)} chars vs rendered: {a_chars} chars (gap {gap}). Agent H1: {a_h1[:80]!r}."
-                if a_chars else f"Agent returned: {str(agent_data)[:200]!r}.",
+                detail,
                 "Content differs between Fetch and rendered browser ⇒ move key content to SSR. Re-run with --with-agent to confirm gap closes.",
             ))
         else:

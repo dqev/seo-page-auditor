@@ -49,10 +49,10 @@ Fetch links: 1 (internal≈0, external≈1).
 **Fix:** Add ≥3 contextual internal links to related pages with descriptive anchors; link out to 1–2 authoritative sources.
 
 ### ✅ Content in initial HTML (not JS-only)
-Extracted 156 chars from 201 chars HTML (ratio 0.78).
+Extracted 156 chars from 201 chars cleaned HTML (ratio 0.78); raw ~29 words.
 
 ### ✅ Indexed & ranking for query (pos 1)
-Query 'example domain' → https://www.example.com/ at position 1. Snippet: 'Example Domain. This domain is for use in documentation examples without needing permission. Avoid use in operations. Learn more.'.
+Query 'example domain' → https://example.com/ at position 1. Snippet: 'Example Domain. This domain is for use in documentation examples without needing permission. Avoid use in operations. Learn more.'.
 
 ### ✅ Query terms in snippet/title/H1
 All key terms ['example', 'domain'] appear in title/snippet/body.
