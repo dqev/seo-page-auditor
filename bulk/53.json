@@ -1,0 +1,144 @@
+{
+  "url": "https://huggingface.co",
+  "final_url": "https://huggingface.co/",
+  "query": "huggingface models",
+  "score": 64,
+  "fetch": {
+    "title": "Hugging Face \u2013 The AI community building the future.",
+    "words": 379,
+    "chars": 2807,
+    "links_found": 102,
+    "html_chars": 3099,
+    "raw_html_chars": 178396,
+    "raw_h1": [
+      "The AI community building the future."
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "huggingface models",
+    "rank": 1,
+    "matched_url": "https://huggingface.co/models",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Models \u2013 Hugging Face",
+        "url": "https://huggingface.co/models"
+      },
+      {
+        "position": 2,
+        "title": "Hugging Face \u2013 The AI community building the future.",
+        "url": "https://huggingface.co/"
+      },
+      {
+        "position": 3,
+        "title": "Choosing and Implementing Hugging Face Models",
+        "url": "https://medium.com/data-science/choosing-and-implementing-hugging-face-models-026d71426fbe"
+      },
+      {
+        "position": 4,
+        "title": "The Model Hub",
+        "url": "https://huggingface.co/docs/hub/en/models-the-hub"
+      },
+      {
+        "position": 5,
+        "title": "What is Hugging Face? - Models, Datasets & Spaces",
+        "url": "https://www.youtube.com/watch?v=qP9mbY3wuWk"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Hugging Face \u2013 The AI community building the future.'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 52 chars: 'Hugging Face \u2013 The AI community building the future.'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['The AI community building the future.'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 379 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'We\u2019re on a journey to advance and democratize artificial intelligence through open source and open science.'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "28 img(s) in raw HTML, 2 missing alt.",
+      "fix": "Add descriptive alt to 2 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://huggingface.co/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "FAIL",
+      "detail": "No <html lang> in raw HTML.",
+      "fix": "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 102 (internal\u224896, external\u22486).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2807 chars from 3099 chars cleaned HTML (ratio 0.91); raw ~663 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'huggingface models' \u2192 https://huggingface.co/models at position 1. Snippet: 'Models \u00b7 convaiinnovations/laya \u00b7 abenzerps/Qwen-Image-2.1-Uncensored-GGUF \u00b7 Edge0/Audio8-ASR-Infinite \u00b7 Qwen/Qwen-Image-2.1 \u00b7 XingChen-AGI/'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['huggingface', 'models']. Missing from visible surfaces: ['huggingface'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['huggingface']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 2 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking.",
+    "Work missing terms into title + H1 + first 100 words: ['huggingface']. Then request re-indexing."
+  ]
+}

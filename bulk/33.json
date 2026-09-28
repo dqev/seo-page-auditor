@@ -1,0 +1,143 @@
+{
+  "url": "https://www.shopify.com",
+  "final_url": "https://www.shopify.com/",
+  "query": "shopify ecommerce",
+  "score": 86,
+  "fetch": {
+    "title": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify",
+    "words": 498,
+    "chars": 3015,
+    "links_found": 186,
+    "html_chars": 3734,
+    "raw_html_chars": 883414,
+    "raw_h1": [
+      "Be the next AI all-star"
+    ],
+    "fetch_h1": [
+      "Be the next AI all-star"
+    ]
+  },
+  "search": {
+    "query": "shopify ecommerce",
+    "rank": 1,
+    "matched_url": "https://www.shopify.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Shopify: The All-in-One Commerce Platform for Businesses ...",
+        "url": "https://www.shopify.com/"
+      },
+      {
+        "position": 2,
+        "title": "Shopify eCommerce",
+        "url": "https://www.reddit.com/r/ShopifyeCommerce/"
+      },
+      {
+        "position": 3,
+        "title": "Is Shopify that good? Why is it so popular for e-commerce? Is there ...",
+        "url": "https://www.reddit.com/r/ecommerce/comments/ye98vh/is_shopify_that_good_why_is_it_so_popular_for/"
+      },
+      {
+        "position": 4,
+        "title": "What is Shopify, and why is it popular for e-commerce?",
+        "url": "https://www.quora.com/What-is-Shopify-and-why-is-it-popular-for-e-commerce"
+      },
+      {
+        "position": 5,
+        "title": "What is Shopify and how does it work, also is it a great Ecommerce platform?",
+        "url": "https://www.quora.com/What-is-Shopify-and-how-does-it-work-also-is-it-a-great-Ecommerce-platform"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Shopify: Your Commerce Platform to Sell Online & In Person - Shopify India'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 74 chars: 'Shopify: Your Commerce Platform to Sell Online & In Person - Shopify India'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Shopify: Your Commerce Platform to Sell Online & In Person - Shopify India'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Be the next AI all-star'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 498 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Try Shopify free. Build or grow your business fast with AI. Get more than ecommerce software with tools to manage every '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "58 img(s) in raw HTML, 50 missing alt.",
+      "fix": "Add descriptive alt to 50 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.shopify.com/in'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-IN' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 186 (internal\u2248156, external\u224830).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 3015 chars from 3734 chars cleaned HTML (ratio 0.81); raw ~1054 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'shopify ecommerce' \u2192 https://www.shopify.com/ at position 1. Snippet: 'Try Shopify free. Build or grow your business fast with AI. Get more than ecommerce software with tools to manage every part of your busines'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['shopify', 'ecommerce'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Shopify: Your Commerce Platform to Sell Online & In Person - Shopify India'.",
+    "Add descriptive alt to 50 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

@@ -1,0 +1,18 @@
+{"n": 39, "url": "https://www.uber.com", "query": "uber rides", "exit": 0, "score": 67, "rank": 1, "words": 486, "fails": 5, "skips": 0}
+{"n": 40, "url": "https://git-scm.com", "query": "git version control", "exit": 0, "score": 43, "rank": 1, "words": 74, "fails": 8, "skips": 0}
+{"n": 41, "url": "https://nginx.org", "query": "nginx server", "exit": 0, "score": 43, "rank": 1, "words": 210, "fails": 8, "skips": 0}
+{"n": 42, "url": "https://www.postgresql.org", "query": "postgresql database", "exit": 0, "score": 86, "rank": 1, "words": 899, "fails": 2, "skips": 0}
+{"n": 43, "url": "https://redis.io", "query": "redis cache", "exit": 0, "score": 71, "rank": 1, "words": 158, "fails": 4, "skips": 0}
+{"n": 44, "url": "https://www.mongodb.com", "query": "mongodb database", "exit": 0, "score": 87, "rank": 1, "words": 891, "fails": 2, "skips": 0}
+{"n": 45, "url": "https://www.lemonde.fr", "query": "lemonde actualites", "exit": 0, "score": 64, "rank": 1, "words": 198, "fails": 5, "skips": 0}
+{"n": 46, "url": "https://www.spiegel.de", "query": "spiegel nachrichten", "exit": 0, "score": 86, "rank": 1, "words": 727, "fails": 2, "skips": 0}
+{"n": 47, "url": "https://www.baidu.com", "query": "baidu search", "exit": 0, "score": 43, "rank": 1, "words": 39, "fails": 8, "skips": 0}
+{"n": 48, "url": "https://hi.wikipedia.org/wiki/भारत", "query": "भारत विकिपीडिया", "exit": 0, "score": 71, "rank": 1, "words": 13726, "fails": 4, "skips": 0}
+{"n": 49, "url": "https://www.x.com", "query": "x social network", "exit": 0, "score": 60, "rank": 1, "words": 72, "fails": 6, "skips": 0}
+{"n": 50, "url": "https://www.instagram.com", "query": "instagram", "exit": 0, "score": 57, "rank": 1, "words": 28, "fails": 6, "skips": 0}
+{"n": 51, "url": "https://openai.com", "query": "openai", "exit": 0, "score": 71, "rank": 1, "words": 171, "fails": 4, "skips": 0}
+{"n": 52, "url": "https://www.anthropic.com", "query": "anthropic claude", "exit": 0, "score": 64, "rank": 1, "words": 213, "fails": 5, "skips": 0}
+{"n": 53, "url": "https://huggingface.co", "query": "huggingface models", "exit": 0, "score": 64, "rank": 1, "words": 379, "fails": 5, "skips": 0}
+{"n": 54, "url": "https://arxiv.org", "query": "arxiv papers", "exit": 0, "score": 50, "rank": 1, "words": 616, "fails": 7, "skips": 0}
+{"n": 55, "url": "https://www.nasa.gov", "query": "nasa", "exit": 0, "score": 79, "rank": 1, "words": 336, "fails": 3, "skips": 0}
+{"n": 56, "url": "https://httpstat.us/404", "query": "httpstat test", "exit": 1, "stderr": "ERROR fetching page: [{'url': 'https://httpstat.us/404', 'error': 'page_not_found'}]\n"}

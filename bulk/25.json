@@ -1,0 +1,143 @@
+{
+  "url": "https://dev.to",
+  "final_url": "https://dev.to/",
+  "query": "dev community",
+  "score": 57,
+  "fetch": {
+    "title": "DEV Community",
+    "words": 428,
+    "chars": 2682,
+    "links_found": 362,
+    "html_chars": 4737,
+    "raw_html_chars": 0,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "dev community",
+    "rank": 1,
+    "matched_url": "https://dev.to/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "DEV Community",
+        "url": "https://dev.to/"
+      },
+      {
+        "position": 2,
+        "title": "daily.dev - Where developers discover what's next",
+        "url": "https://daily.dev/"
+      },
+      {
+        "position": 3,
+        "title": "DEV Community - Apps on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.forem.android&hl=en_US"
+      },
+      {
+        "position": 4,
+        "title": "DEV Community (@thepracticaldev)",
+        "url": "https://www.facebook.com/thepracticaldev/"
+      },
+      {
+        "position": 5,
+        "title": "DEV Community",
+        "url": "https://www.linkedin.com/showcase/dev-a-forem-community/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'DEV Community'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 13 chars: 'DEV Community'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'DEV Community'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 428 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'A space to discuss and keep up software development and manage your software career'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "FAIL",
+      "detail": "No <html lang> in raw HTML.",
+      "fix": "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 362 (internal\u2248348, external\u224814).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2682 chars from 4737 chars cleaned HTML (ratio 0.57); raw ~428 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'dev community' \u2192 https://dev.to/ at position 1. Snippet: \"DEV Community is a community of 4,113,455 amazing developers. We're a place where coders share, stay up-to-date and grow their careers.\".",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['community'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'DEV Community'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "url": "https://www.theverge.com",
+  "final_url": "https://www.theverge.com",
+  "query": "the verge tech news",
+  "score": 79,
+  "fetch": {
+    "title": "The Verge",
+    "words": 2566,
+    "chars": 15956,
+    "links_found": 285,
+    "html_chars": 18089,
+    "raw_html_chars": 923863,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "the verge tech news",
+    "rank": 1,
+    "matched_url": "https://www.theverge.com/tech",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Tech",
+        "url": "https://www.theverge.com/tech"
+      },
+      {
+        "position": 2,
+        "title": "The Verge",
+        "url": "https://www.theverge.com/"
+      },
+      {
+        "position": 3,
+        "title": "The Verge",
+        "url": "https://www.youtube.com/theverge"
+      },
+      {
+        "position": 4,
+        "title": "The Verge Archives - Tech - Page 2",
+        "url": "https://www.theverge.com/tech/archives/2"
+      },
+      {
+        "position": 5,
+        "title": "Artificial Intelligence",
+        "url": "https://www.theverge.com/ai-artificial-intelligence"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'The Verge'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 9 chars: 'The Verge'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'The Verge'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 2566 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'The Verge is about technology and how it makes us feel. Founded in 2011, we offer our audience everything from breaking '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "100 img(s) in raw HTML, 6 missing alt.",
+      "fix": "Add descriptive alt to 6 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 2 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.theverge.com'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 285 (internal\u2248197, external\u224888).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 15956 chars from 18089 chars cleaned HTML (ratio 0.88); raw ~3522 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'the verge tech news' \u2192 https://www.theverge.com/tech at position 1. Snippet: \"The latest tech news about the world's best (and sometimes worst) hardware, apps, and much more. From top companies like Google and Apple to\".",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['verge', 'tech', 'news'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'The Verge'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 6 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

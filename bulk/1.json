@@ -1,0 +1,144 @@
+{
+  "url": "https://github.com",
+  "final_url": "https://github.com",
+  "query": "github code hosting",
+  "score": 79,
+  "fetch": {
+    "title": "GitHub \u00b7 Change is constant. GitHub keeps you ahead.",
+    "words": 436,
+    "chars": 2900,
+    "links_found": 140,
+    "html_chars": 3290,
+    "raw_html_chars": 576154,
+    "raw_h1": [
+      "The future of building happens together"
+    ],
+    "fetch_h1": [
+      "The future of building happens together"
+    ]
+  },
+  "search": {
+    "query": "github code hosting",
+    "rank": 1,
+    "matched_url": "https://pages.github.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "GitHub Pages documentation - GitHub Docs",
+        "url": "https://pages.github.com/"
+      },
+      {
+        "position": 2,
+        "title": "Basic steps for hosting on Github",
+        "url": "https://gist.github.com/TylerFisher/6127328"
+      },
+      {
+        "position": 3,
+        "title": "hosting \u00b7 GitHub Topics",
+        "url": "https://github.com/topics/hosting"
+      },
+      {
+        "position": 4,
+        "title": "Does github have a free hosting service?",
+        "url": "https://www.reddit.com/r/github/comments/sqnimv/does_github_have_a_free_hosting_service/"
+      },
+      {
+        "position": 5,
+        "title": "Hosting your website on Github",
+        "url": "https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 61 chars: 'GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['The future of building happens together'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 436 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: \"Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the la\".",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "24 img(s) in raw HTML, 17 missing alt.",
+      "fix": "Add descriptive alt to 17 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://github.com'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 140 (internal\u2248126, external\u224814).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2900 chars from 3290 chars cleaned HTML (ratio 0.88); raw ~1135 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'github code hosting' \u2192 https://pages.github.com/ at position 1. Snippet: 'GitHub Pages turns any GitHub repository into a live website\u2014no separate hosting required.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['github', 'code', 'hosting'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'GitHub \u00b7 Change is constant. GitHub keeps you ahead. \u00b7 GitHub'.",
+    "Add descriptive alt to 17 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+  ]
+}

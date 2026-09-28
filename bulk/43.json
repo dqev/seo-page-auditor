@@ -1,0 +1,143 @@
+{
+  "url": "https://redis.io",
+  "final_url": "https://redis.io/",
+  "query": "redis cache",
+  "score": 71,
+  "fetch": {
+    "title": "Redis - Real-time data for agents & apps",
+    "words": 158,
+    "chars": 980,
+    "links_found": 211,
+    "html_chars": 1153,
+    "raw_html_chars": 1743058,
+    "raw_h1": [
+      "Inquiring agents want to know:"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "redis cache",
+    "rank": 1,
+    "matched_url": "https://redis.io/solutions/caching/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Fast caching solutions with Redis",
+        "url": "https://redis.io/solutions/caching/"
+      },
+      {
+        "position": 2,
+        "title": "Redis Cache",
+        "url": "https://www.geeksforgeeks.org/system-design/redis-cache/"
+      },
+      {
+        "position": 3,
+        "title": "Experiences with Redis for caching? : r/dotnet",
+        "url": "https://www.reddit.com/r/dotnet/comments/10t0jtj/experiences_with_redis_for_caching/"
+      },
+      {
+        "position": 4,
+        "title": "Redis - Real-time data for agents & apps",
+        "url": "https://redis.io/"
+      },
+      {
+        "position": 5,
+        "title": "Azure Cache for Redis",
+        "url": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Redis - Real-time data for agents & apps'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 40 chars: 'Redis - Real-time data for agents & apps'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Inquiring agents want to know:'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 158 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Developers love Redis. Unlock the full potential of the Redis database with Redis Enterprise and start building blazing '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "35 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 3 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://redis.io/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 211 (internal\u2248200, external\u224811).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~1355 words but Fetch extracts 158 (88% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'redis cache' \u2192 https://redis.io/solutions/caching/ at position 1. Snippet: 'Redis Enterprise is designed for caching at scale. Its enterprise-grade functionality ensures that critical applications run reliably and su'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['redis', 'cache']. Missing from visible surfaces: ['cache'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['cache']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise.",
+    "Work missing terms into title + H1 + first 100 words: ['cache']. Then request re-indexing."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "url": "https://www.samsung.com",
+  "final_url": "https://www.samsung.com/us/",
+  "query": "samsung",
+  "score": 79,
+  "fetch": {
+    "title": "Mobile | TV | Home Electronics | Home Appliances | Samsung US | Samsung US",
+    "words": 161,
+    "chars": 1044,
+    "links_found": 300,
+    "html_chars": 1465,
+    "raw_html_chars": 363431,
+    "raw_h1": [
+      "Samsung"
+    ],
+    "fetch_h1": [
+      "Samsung"
+    ]
+  },
+  "search": {
+    "query": "samsung",
+    "rank": 1,
+    "matched_url": "https://www.samsung.com/us/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Samsung US | Mobile | TV | Home Electronics | Home ...",
+        "url": "https://www.samsung.com/us/"
+      },
+      {
+        "position": 2,
+        "title": "Samsung Caribbean | Mobile | TV | Home Appliances",
+        "url": "https://www.samsung.com/latin_en/"
+      },
+      {
+        "position": 3,
+        "title": "Samsung YouTube",
+        "url": "https://www.youtube.com/samsung"
+      },
+      {
+        "position": 4,
+        "title": "Samsung - Walmart.com",
+        "url": "https://www.walmart.com/cp/samsung/8477167"
+      },
+      {
+        "position": 5,
+        "title": "Shop Samsung devices",
+        "url": "https://www.verizon.com/products/devices/samsung/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Samsung India | Mobile | Tablets | TV | Home Appliances'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 55 chars: 'Samsung India | Mobile | Tablets | TV | Home Appliances'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Samsung'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 161 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Discover the latest smartphones, tablets, wearables, TVs & home appliances, a wide range of electronics & appliances at '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "167 img(s) in raw HTML, 27 missing alt.",
+      "fix": "Add descriptive alt to 27 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 4 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.samsung.com/in/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-IN' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 300 (internal\u2248293, external\u22487).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~1213 words but Fetch extracts 161 (87% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'samsung' \u2192 https://www.samsung.com/us/ at position 1. Snippet: 'Discover the latest in electronic & smart appliance technology with Samsung. Find the next big thing from smartphones & tablets to laptops &'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['samsung'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 27 image(s). AI tools + image search read alt, not pixels.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

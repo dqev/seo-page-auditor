@@ -1,0 +1,147 @@
+{
+  "url": "https://nginx.org",
+  "final_url": "https://nginx.org/",
+  "query": "nginx server",
+  "score": 43,
+  "fetch": {
+    "title": "nginx",
+    "words": 210,
+    "chars": 1600,
+    "links_found": 51,
+    "html_chars": 2338,
+    "raw_html_chars": 6283,
+    "raw_h1": [
+      ""
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "nginx server",
+    "rank": 1,
+    "matched_url": "https://nginx.org/en/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "nginx",
+        "url": "https://nginx.org/en/"
+      },
+      {
+        "position": 2,
+        "title": "What is nginx? Explain to me like I'm 5 because I'm clueless!",
+        "url": "https://www.reddit.com/r/nginx/comments/mvatwk/what_is_nginx_explain_to_me_like_im_5_because_im/"
+      },
+      {
+        "position": 3,
+        "title": "nginx",
+        "url": "https://nginx.org/"
+      },
+      {
+        "position": 4,
+        "title": "Web Server | NGINX Documentation",
+        "url": "https://docs.nginx.com/nginx/admin-guide/web-server/"
+      },
+      {
+        "position": 5,
+        "title": "NGINX Explained - What is Nginx",
+        "url": "https://www.youtube.com/watch?v=iInUBOVeBCc"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'nginx'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 5 chars: 'nginx'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'nginx'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 [''] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 210 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "FAIL",
+      "detail": "Meta description: ''.",
+      "fix": "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet."
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "5 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "FAIL",
+      "detail": "No <html lang> in raw HTML.",
+      "fix": "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 51 (internal\u224838, external\u224813).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 1600 chars from 2338 chars cleaned HTML (ratio 0.68); raw ~247 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'nginx server' \u2192 https://nginx.org/en/ at position 1. Snippet: 'nginx (\"engine x\") is an HTTP web server, reverse proxy, content cache, load balancer, TCP/UDP proxy server, and mail proxy server. Original'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['nginx', 'server'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'nginx'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+  ]
+}

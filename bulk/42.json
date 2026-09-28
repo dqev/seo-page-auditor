@@ -1,0 +1,143 @@
+{
+  "url": "https://www.postgresql.org",
+  "final_url": "https://www.postgresql.org/",
+  "query": "postgresql database",
+  "score": 86,
+  "fetch": {
+    "title": "PostgreSQL",
+    "words": 899,
+    "chars": 5733,
+    "links_found": 84,
+    "html_chars": 7675,
+    "raw_html_chars": 24893,
+    "raw_h1": [
+      "PostgreSQL: The World's Most Advanced Open Source Relational Database"
+    ],
+    "fetch_h1": [
+      "PostgreSQL: The World's Most Advanced Open Source Relational Database"
+    ]
+  },
+  "search": {
+    "query": "postgresql database",
+    "rank": 1,
+    "matched_url": "https://www.postgresql.org/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "position": 2,
+        "title": "PostgreSQL Tutorial",
+        "url": "https://www.w3schools.com/postgresql/"
+      },
+      {
+        "position": 3,
+        "title": "PostgreSQL",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "position": 4,
+        "title": "Azure Database for PostgreSQL",
+        "url": "https://azure.microsoft.com/en-us/products/postgresql"
+      },
+      {
+        "position": 5,
+        "title": "Download PostgreSQL",
+        "url": "https://www.enterprisedb.com/downloads/postgres-postgresql-downloads"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: \"PostgreSQL: The world's most advanced open source database\"",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 58 chars: \"PostgreSQL: The world's most advanced open source database\".",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): [\"PostgreSQL: The World's Most Advanced Open Source Relational\"].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 899 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: \"The official site for PostgreSQL, the world's most advanced open source database\".",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "8 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 84 (internal\u224875, external\u22489).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 5733 chars from 7675 chars cleaned HTML (ratio 0.75); raw ~1004 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'postgresql database' \u2192 https://www.postgresql.org/ at position 1. Snippet: 'PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['postgresql', 'database'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+  ]
+}

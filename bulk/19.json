@@ -1,0 +1,144 @@
+{
+  "url": "https://pypi.org",
+  "final_url": "https://pypi.org/",
+  "query": "python packages",
+  "score": 79,
+  "fetch": {
+    "title": "Python Package Index",
+    "words": 81,
+    "chars": 540,
+    "links_found": 56,
+    "html_chars": 682,
+    "raw_html_chars": 27928,
+    "raw_h1": [
+      "Find, install and publish Python packages with the Python Package Index"
+    ],
+    "fetch_h1": [
+      "Find, install and publish Python packages with the Python Package Index"
+    ]
+  },
+  "search": {
+    "query": "python packages",
+    "rank": 1,
+    "matched_url": "https://pypi.org/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "PyPI \u00b7 The Python Package Index",
+        "url": "https://pypi.org/"
+      },
+      {
+        "position": 2,
+        "title": "Python Packages",
+        "url": "https://www.geeksforgeeks.org/python/python-packages/"
+      },
+      {
+        "position": 3,
+        "title": "Packaging Python Projects",
+        "url": "https://packaging.python.org/tutorials/packaging-projects/"
+      },
+      {
+        "position": 4,
+        "title": "What are all the Python packages, and what are they used for?",
+        "url": "https://www.quora.com/What-are-all-the-Python-packages-and-what-are-they-used-for"
+      },
+      {
+        "position": 5,
+        "title": "What are the best packages in Python?",
+        "url": "https://www.quora.com/What-are-the-best-packages-in-Python"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'PyPI \u00b7 The Python Package Index'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 31 chars: 'PyPI \u00b7 The Python Package Index'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Find, install and publish Python packages with the Python Pa'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 81 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'The Python Package Index (PyPI) is a repository of software for the Python programming language.'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "16 img(s) in raw HTML, 15 missing alt.",
+      "fix": "Add descriptive alt to 15 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://pypi.org/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 56 (internal\u224824, external\u224832).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 540 chars from 682 chars cleaned HTML (ratio 0.79); raw ~276 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'python packages' \u2192 https://pypi.org/ at position 1. Snippet: 'PyPI helps you find and install software developed and shared by the Python community. Learn about installing packages. Package authors use '.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['python', 'packages'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 15 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+  ]
+}

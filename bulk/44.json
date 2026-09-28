@@ -1,0 +1,153 @@
+{
+  "url": "https://www.mongodb.com",
+  "final_url": "https://www.mongodb.com/",
+  "query": "mongodb database",
+  "score": 87,
+  "fetch": {
+    "title": "MongoDB: The World\u2019s Leading Modern Data Platform",
+    "words": 891,
+    "chars": 6240,
+    "links_found": 161,
+    "html_chars": 6822,
+    "raw_html_chars": 992757,
+    "raw_h1": [
+      "One data platform. Unlimited AI potential.",
+      "START HERE",
+      "MORE INFORMATION"
+    ],
+    "fetch_h1": [
+      "One data platform. Unlimited AI potential.",
+      "START HERE",
+      "MORE INFORMATION"
+    ]
+  },
+  "search": {
+    "query": "mongodb database",
+    "rank": 1,
+    "matched_url": "https://www.mongodb.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "MongoDB: The World's Leading Modern Data Platform ...",
+        "url": "https://www.mongodb.com/"
+      },
+      {
+        "position": 2,
+        "title": "MongoDB",
+        "url": "https://en.wikipedia.org/wiki/MongoDB"
+      },
+      {
+        "position": 3,
+        "title": "MongoDB Tutorial",
+        "url": "https://www.w3schools.com/mongodb/"
+      },
+      {
+        "position": 4,
+        "title": "mongodb/mongo: The MongoDB Database",
+        "url": "https://github.com/mongodb/mongo"
+      },
+      {
+        "position": 5,
+        "title": "ELI5: What is MongoDB and what is used for?",
+        "url": "https://www.reddit.com/r/mongodb/comments/5ouiug/eli5_what_is_mongodb_and_what_is_used_for/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'MongoDB: The World\u2019s Leading Modern Data Platform | MongoDB'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 59 chars: 'MongoDB: The World\u2019s Leading Modern Data Platform | MongoDB'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 3 H1(s): ['One data platform. Unlimited AI potential.', 'START HERE', 'MORE INFORMATION'].",
+      "fix": ""
+    },
+    {
+      "check": "Single H1",
+      "status": "FAIL",
+      "detail": "3 H1s in raw HTML: ['One data platform. Unlimited AI potential.', 'START HERE', 'MORE INFORMATION'].",
+      "fix": "Keep exactly one H1 per page; demote others to H2."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 891 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Get your ideas to market faster with a flexible, AI-ready database. MongoDB makes working with data easy.'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "75 img(s) in raw HTML, 10 missing alt.",
+      "fix": "Add descriptive alt to 10 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.mongodb.com'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 161 (internal\u2248160, external\u22481).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 6240 chars from 6822 chars cleaned HTML (ratio 0.91); raw ~1343 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'mongodb database' \u2192 https://www.mongodb.com/ at position 1. Snippet: 'MongoDB Atlas integrates operational and vector databases in a single, unified platform. Use vector representations of your data to perform '.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['mongodb', 'database'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Keep exactly one H1 per page; demote others to H2.",
+    "Add descriptive alt to 10 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

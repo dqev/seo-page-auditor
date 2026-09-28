@@ -1,0 +1,141 @@
+{
+  "url": "https://css-tricks.com",
+  "final_url": "https://css-tricks.com/",
+  "query": "css tricks",
+  "score": 86,
+  "fetch": {
+    "title": "CSS-Tricks - Learning for front-end designers and developers",
+    "words": 351,
+    "chars": 2271,
+    "links_found": 261,
+    "html_chars": 4414,
+    "raw_html_chars": 182103,
+    "raw_h1": [
+      "Let\u2019s Use the Emergent CSS random() Function in all the Browsers"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "css tricks",
+    "rank": 1,
+    "matched_url": "https://css-tricks.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "CSS-Tricks - Learning for front-end designers and developers",
+        "url": "https://css-tricks.com/"
+      },
+      {
+        "position": 2,
+        "title": "What's the most underrated CSS trick you've learned that ...",
+        "url": "https://www.reddit.com/r/css/comments/1hlubhw/whats_the_most_underrated_css_trick_youve_learned/"
+      },
+      {
+        "position": 3,
+        "title": "7 CSS Tricks That Will Blow Your Mind",
+        "url": "https://www.youtube.com/watch?v=Ol62e-dWu0E"
+      },
+      {
+        "position": 4,
+        "title": "CSS-Tricks",
+        "url": "https://x.com/css"
+      },
+      {
+        "position": 5,
+        "title": "My CSS-Tricks Top 10",
+        "url": "https://geoffgraham.me/my-css-tricks-top-10/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'CSS-Tricks - Learning for front-end designers and developers'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 60 chars: 'CSS-Tricks - Learning for front-end designers and developers'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Let\u2019s Use the Emergent CSS random() Function in all the Brow'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 351 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'CSS-Tricks is where folks around the world come to learn about front-end code and everything related to it, including HT'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "49 img(s) in raw HTML, 47 missing alt.",
+      "fix": "Add descriptive alt to 47 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://css-tricks.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 261 (internal\u2248246, external\u224815).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2271 chars from 4414 chars cleaned HTML (ratio 0.51); raw ~999 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'css tricks' \u2192 https://css-tricks.com/ at position 1. Snippet: 'CSS-Tricks is where folks around the world come to learn about front-end code and everything related to it, including HTML, CSS, and yes, CS'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['tricks'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 47 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

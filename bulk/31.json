@@ -1,0 +1,146 @@
+{
+  "url": "https://www.ebay.com",
+  "final_url": "https://www.ebay.com/",
+  "query": "ebay auctions",
+  "score": 64,
+  "fetch": {
+    "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+    "words": 119,
+    "chars": 721,
+    "links_found": 518,
+    "html_chars": 968,
+    "raw_html_chars": 0,
+    "raw_h1": [
+      "Electronics, Cars, Fashion, Collectibles &amp; More | eBay"
+    ],
+    "fetch_h1": [
+      "Electronics, Cars, Fashion, Collectibles &amp; More | eBay"
+    ]
+  },
+  "search": {
+    "query": "ebay auctions",
+    "rank": 1,
+    "matched_url": "https://www.ebay.com/b/Auctions-Ending-Soon/bn_7114028787",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Auctions Ending Soon products for sale",
+        "url": "https://www.ebay.com/b/Auctions-Ending-Soon/bn_7114028787"
+      },
+      {
+        "position": 2,
+        "title": "eBay: Electronics, Cars, Fashion, Collectibles & More",
+        "url": "https://www.ebay.com/"
+      },
+      {
+        "position": 3,
+        "title": "Online Auction and Sales",
+        "url": "https://www.ebay.com/str/onlineauctionandsales"
+      },
+      {
+        "position": 4,
+        "title": "Selling through auctions",
+        "url": "https://www.ebay.com/help/selling/listings/selling-auctions?id=4110"
+      },
+      {
+        "position": 5,
+        "title": "Are actual auctions even a thing or worth it anymore?",
+        "url": "https://www.reddit.com/r/eBaySellers/comments/1b0krjg/are_actual_auctions_even_a_thing_or_worth_it/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Electronics, Cars, Fashion, Collectibles & More | eBay'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 54 chars: 'Electronics, Cars, Fashion, Collectibles & More | eBay'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Electronics, Cars, Fashion, Collectibles &amp; More | eBay'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 119 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: \"Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low pric\".",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "FAIL",
+      "detail": "No <html lang> in raw HTML.",
+      "fix": "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 518 (internal\u2248502, external\u224816).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 721 chars from 968 chars cleaned HTML (ratio 0.74); raw ~119 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'ebay auctions' \u2192 https://www.ebay.com/b/Auctions-Ending-Soon/bn_7114028787 at position 1. Snippet: 'Get the best deals on Auctions Ending Soon when you shop the largest online selection at eBay.com. Free shipping on many items | Browse your'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['ebay', 'auctions'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+  ]
+}

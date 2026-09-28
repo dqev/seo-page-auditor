@@ -1,0 +1,142 @@
+{
+  "url": "https://www.docker.com",
+  "final_url": "https://www.docker.com/",
+  "query": "docker containers",
+  "score": 93,
+  "fetch": {
+    "title": "Docker: Accelerated Container Application Development",
+    "words": 385,
+    "chars": 2443,
+    "links_found": 114,
+    "html_chars": 3399,
+    "raw_html_chars": 499268,
+    "raw_h1": [
+      "Trust Docker for the Agents You Don\u2019t"
+    ],
+    "fetch_h1": [
+      "Trust Docker for the Agents You Don\u2019t"
+    ]
+  },
+  "search": {
+    "query": "docker containers",
+    "rank": 1,
+    "matched_url": "https://www.docker.com/resources/what-container/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "What is a Container?",
+        "url": "https://www.docker.com/resources/what-container/"
+      },
+      {
+        "position": 2,
+        "title": "Docker Hub Container Image Library | App Containerization",
+        "url": "https://hub.docker.com/"
+      },
+      {
+        "position": 3,
+        "title": "List of useful docker containers",
+        "url": "https://www.reddit.com/r/docker/comments/15pd93q/list_of_useful_docker_containers/"
+      },
+      {
+        "position": 4,
+        "title": "Docker Image vs Container - Difference Between ...",
+        "url": "https://aws.amazon.com/compare/the-difference-between-docker-images-and-containers/"
+      },
+      {
+        "position": 5,
+        "title": "What is a container?",
+        "url": "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Docker | Secure Sandboxes for AI Agents'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 39 chars: 'Docker | Secure Sandboxes for AI Agents'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Trust Docker for the Agents You Don\u2019t'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 385 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Run AI agents and containers safely, anywhere. Docker gives builders trusted sandboxes, governance, and a secure supply '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "7 img(s) in raw HTML, 1 missing alt.",
+      "fix": "Add descriptive alt to 1 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.docker.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 114 (internal\u2248107, external\u22487).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2443 chars from 3399 chars cleaned HTML (ratio 0.72); raw ~1012 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'docker containers' \u2192 https://www.docker.com/resources/what-container/ at position 1. Snippet: 'A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application:'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['docker', 'containers'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Add descriptive alt to 1 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

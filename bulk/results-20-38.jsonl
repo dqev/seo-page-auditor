@@ -1,0 +1,19 @@
+{"n": 20, "url": "https://www.bbc.com/news", "query": "bbc news", "exit": 0, "score": 79, "rank": 1, "words": 1178, "fails": 3, "skips": 0}
+{"n": 21, "url": "https://www.nytimes.com", "query": "new york times", "exit": 0, "score": 64, "rank": 1, "words": 481, "fails": 5, "skips": 0}
+{"n": 22, "url": "https://www.theverge.com", "query": "the verge tech news", "exit": 0, "score": 79, "rank": 1, "words": 2566, "fails": 3, "skips": 0}
+{"n": 23, "url": "https://techcrunch.com", "query": "techcrunch startups", "exit": 0, "score": 86, "rank": 1, "words": 873, "fails": 2, "skips": 0}
+{"n": 24, "url": "https://news.ycombinator.com", "query": "hacker news", "exit": 0, "score": 50, "rank": 1, "words": 743, "fails": 7, "skips": 0}
+{"n": 25, "url": "https://dev.to", "query": "dev community", "exit": 0, "score": 57, "rank": 1, "words": 428, "fails": 6, "skips": 0}
+{"n": 26, "url": "https://css-tricks.com", "query": "css tricks", "exit": 0, "score": 86, "rank": 1, "words": 351, "fails": 2, "skips": 0}
+{"n": 27, "url": "https://www.smashingmagazine.com", "query": "smashing magazine", "exit": 0, "score": 86, "rank": 1, "words": 1127, "fails": 2, "skips": 0}
+{"n": 28, "url": "https://en.wikipedia.org/wiki/Python_(programming_language)", "query": "python wikipedia", "exit": 0, "score": 86, "rank": 1, "words": 12480, "fails": 2, "skips": 0}
+{"n": 29, "url": "https://www.ted.com/talks", "query": "ted talks", "exit": 0, "score": 64, "rank": 1, "words": 246, "fails": 5, "skips": 0}
+{"n": 30, "url": "https://www.amazon.com", "query": "amazon shopping", "exit": 0, "score": 64, "rank": 1, "words": 743, "fails": 5, "skips": 0}
+{"n": 31, "url": "https://www.ebay.com", "query": "ebay auctions", "exit": 0, "score": 64, "rank": 1, "words": 119, "fails": 5, "skips": 0}
+{"n": 32, "url": "https://www.etsy.com", "query": "etsy handmade", "exit": 0, "score": 50, "rank": 1, "words": 287, "fails": 7, "skips": 0}
+{"n": 33, "url": "https://www.shopify.com", "query": "shopify ecommerce", "exit": 0, "score": 86, "rank": 1, "words": 498, "fails": 2, "skips": 0}
+{"n": 34, "url": "https://www.apple.com", "query": "apple", "exit": 0, "score": 64, "rank": 1, "words": 118, "fails": 5, "skips": 0}
+{"n": 35, "url": "https://www.samsung.com", "query": "samsung", "exit": 0, "score": 79, "rank": 1, "words": 161, "fails": 3, "skips": 0}
+{"n": 36, "url": "https://www.ikea.com", "query": "ikea furniture", "exit": 0, "score": 64, "rank": 1, "words": 69, "fails": 5, "skips": 0}
+{"n": 37, "url": "https://www.airbnb.com", "query": "airbnb stays", "exit": 0, "score": 50, "rank": 1, "words": 75, "fails": 7, "skips": 0}
+{"n": 38, "url": "https://www.booking.com", "query": "booking hotels", "exit": 0, "score": 64, "rank": 1, "words": 181, "fails": 5, "skips": 0}

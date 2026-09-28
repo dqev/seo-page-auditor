@@ -1,0 +1,139 @@
+{
+  "url": "https://techcrunch.com",
+  "final_url": "https://techcrunch.com/",
+  "query": "techcrunch startups",
+  "score": 86,
+  "fetch": {
+    "title": "TechCrunch | Startup and Technology News",
+    "words": 873,
+    "chars": 5112,
+    "links_found": 324,
+    "html_chars": 9151,
+    "raw_html_chars": 448494,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "techcrunch startups",
+    "rank": 1,
+    "matched_url": "https://techcrunch.com/category/startups/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Startups",
+        "url": "https://techcrunch.com/category/startups/"
+      },
+      {
+        "position": 2,
+        "title": "TechCrunch | Startup and Technology News",
+        "url": "https://techcrunch.com/"
+      },
+      {
+        "position": 3,
+        "title": "TechCrunch",
+        "url": "https://www.youtube.com/user/techcrunch"
+      },
+      {
+        "position": 4,
+        "title": "TechCrunch",
+        "url": "https://en.wikipedia.org/wiki/TechCrunch"
+      },
+      {
+        "position": 5,
+        "title": "List of top TechCrunch Alumni Founded Companies",
+        "url": "https://www.crunchbase.com/hub/techcrunch-alumni-founded-companies"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'TechCrunch | Startup and Technology News'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 40 chars: 'TechCrunch | Startup and Technology News'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 873 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'TechCrunch | Reporting on the business of technology, startups, venture capital funding, and Silicon Valley'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "73 img(s) in raw HTML, 39 missing alt.",
+      "fix": "Add descriptive alt to 39 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://techcrunch.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 324 (internal\u2248315, external\u22489).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 5112 chars from 9151 chars cleaned HTML (ratio 0.56); raw ~2035 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'techcrunch startups' \u2192 https://techcrunch.com/category/startups/ at position 1. Snippet: 'Tech startup news that breaks down the funding, growth, and long-term trajectory of companies across every stage and industry. Startup cover'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['techcrunch', 'startups'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 39 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

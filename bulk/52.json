@@ -1,0 +1,144 @@
+{
+  "url": "https://www.anthropic.com",
+  "final_url": "https://www.anthropic.com/",
+  "query": "anthropic claude",
+  "score": 64,
+  "fetch": {
+    "title": "Home \\ Anthropic",
+    "words": 213,
+    "chars": 1347,
+    "links_found": 192,
+    "html_chars": 1761,
+    "raw_html_chars": 169084,
+    "raw_h1": [
+      "AI research and products that put safety at the frontier"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "anthropic claude",
+    "rank": 1,
+    "matched_url": "https://www.anthropic.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Home \\ Anthropic",
+        "url": "https://www.anthropic.com/"
+      },
+      {
+        "position": 2,
+        "title": "Claude: Sign in",
+        "url": "https://claude.ai/"
+      },
+      {
+        "position": 3,
+        "title": "Claude Platform",
+        "url": "https://platform.claude.com/"
+      },
+      {
+        "position": 4,
+        "title": "Claude (AI)",
+        "url": "https://en.wikipedia.org/wiki/Claude_(AI)"
+      },
+      {
+        "position": 5,
+        "title": "Anthropic",
+        "url": "https://www.linkedin.com/company/anthropicresearch"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Home \\\\ Anthropic'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 16 chars: 'Home \\\\ Anthropic'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Home \\\\ Anthropic'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['AI research and products that put safety at the frontier'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 213 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: \"Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems\".",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.anthropic.com'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 192 (internal\u2248105, external\u224887).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~711 words but Fetch extracts 213 (70% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'anthropic claude' \u2192 https://www.anthropic.com/ at position 1. Snippet: \"Claude Science. Announcements \u00b7 Core views on AI safety. Announcements \u00b7 Anthropic's Responsible Scaling Policy. Alignment Science \u00b7 Anthrop\".",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['anthropic', 'claude'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Home \\\\ Anthropic'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

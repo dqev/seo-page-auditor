@@ -1,0 +1,19 @@
+{"n": 1, "url": "https://github.com", "query": "github code hosting", "exit": 0, "score": 79, "rank": 1, "words": 436, "fails": 3, "skips": 0}
+{"n": 2, "url": "https://stackoverflow.com", "query": "stackoverflow programming questions", "exit": 0, "score": 57, "rank": 1, "words": 771, "fails": 6, "skips": 0}
+{"n": 3, "url": "https://developer.mozilla.org/en-US/docs/Web/HTML", "query": "mdn html docs", "exit": 0, "score": 86, "rank": 1, "words": 1074, "fails": 2, "skips": 0}
+{"n": 4, "url": "https://react.dev", "query": "react javascript library", "exit": 0, "score": 73, "rank": 1, "words": 910, "fails": 4, "skips": 0}
+{"n": 5, "url": "https://www.python.org", "query": "python programming language", "exit": 0, "score": 60, "rank": 1, "words": 232, "fails": 6, "skips": 0}
+{"n": 6, "url": "https://nodejs.org/en", "query": "node js runtime", "exit": 0, "score": 79, "rank": 1, "words": 280, "fails": 3, "skips": 0}
+{"n": 7, "url": "https://www.docker.com", "query": "docker containers", "exit": 0, "score": 93, "rank": 1, "words": 385, "fails": 1, "skips": 0}
+{"n": 8, "url": "https://kubernetes.io", "query": "kubernetes orchestration", "exit": 0, "score": 71, "rank": 3, "words": 494, "fails": 4, "skips": 0}
+{"n": 9, "url": "https://www.typescriptlang.org", "query": "typescript language", "exit": 0, "score": 86, "rank": 1, "words": 684, "fails": 2, "skips": 0}
+{"n": 10, "url": "https://tailwindcss.com", "query": "tailwind css framework", "exit": 0, "score": 71, "rank": 1, "words": 802, "fails": 4, "skips": 0}
+{"n": 11, "url": "https://vercel.com", "query": "vercel hosting", "exit": 0, "score": 64, "rank": 1, "words": 120, "fails": 5, "skips": 0}
+{"n": 12, "url": "https://stripe.com", "query": "stripe payments", "exit": 0, "score": 87, "rank": 1, "words": 1106, "fails": 2, "skips": 0}
+{"n": 13, "url": "https://www.figma.com", "query": "figma design tool", "exit": 0, "score": 79, "rank": 1, "words": 225, "fails": 3, "skips": 0}
+{"n": 14, "url": "https://www.notion.so", "query": "notion notes", "exit": 0, "score": 54, "rank": null, "words": 132, "fails": 6, "skips": 0}
+{"n": 15, "url": "https://linear.app", "query": "linear issue tracking", "exit": 0, "score": 86, "rank": 1, "words": 953, "fails": 2, "skips": 0}
+{"n": 16, "url": "https://web.dev", "query": "web dev google", "exit": 0, "score": 71, "rank": 1, "words": 929, "fails": 4, "skips": 0}
+{"n": 17, "url": "https://caniuse.com", "query": "browser support tables", "exit": 0, "score": 57, "rank": 1, "words": 191, "fails": 6, "skips": 0}
+{"n": 18, "url": "https://www.npmjs.com", "query": "npm packages", "exit": 0, "score": 50, "rank": 1, "words": 154, "fails": 7, "skips": 0}
+{"n": 19, "url": "https://pypi.org", "query": "python packages", "exit": 0, "score": 79, "rank": 1, "words": 81, "fails": 3, "skips": 0}

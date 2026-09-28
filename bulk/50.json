@@ -1,0 +1,143 @@
+{
+  "url": "https://www.instagram.com",
+  "final_url": "https://www.instagram.com",
+  "query": "instagram",
+  "score": 57,
+  "fetch": {
+    "title": "Instagram",
+    "words": 28,
+    "chars": 171,
+    "links_found": 18,
+    "html_chars": 216,
+    "raw_html_chars": 415990,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "instagram",
+    "rank": 1,
+    "matched_url": "https://www.instagram.com/?hl=en",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Instagram",
+        "url": "https://www.instagram.com/?hl=en"
+      },
+      {
+        "position": 2,
+        "title": "Instagram - Apps on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en_US"
+      },
+      {
+        "position": 3,
+        "title": "Instagram",
+        "url": "https://en.wikipedia.org/wiki/Instagram"
+      },
+      {
+        "position": 4,
+        "title": "Instagram",
+        "url": "https://x.com/instagram"
+      },
+      {
+        "position": 5,
+        "title": "Instagram - App Store - Apple",
+        "url": "https://apps.apple.com/us/app/instagram/id389801252"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Instagram'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 9 chars: 'Instagram'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Instagram'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 28 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: \"Create an account or log in to Instagram - Share what you're into with the people who get you.\".",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "2 img(s) in raw HTML, 2 missing alt.",
+      "fix": "Add descriptive alt to 2 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.instagram.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 18 (internal\u224812, external\u22486).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "FAIL",
+      "detail": "Ships 415kb of HTML/JS but only ~1 raw words (28 extracted). Likely client-rendered.",
+      "fix": "Server-render (or pre-render) H1 + first 200 words. Verify: view-source should contain the H1 text."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'instagram' \u2192 https://www.instagram.com/?hl=en at position 1. Snippet: \"Create an account or log in to Instagram - Share what you're into with the people who get you.\".",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['instagram'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Instagram'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 2 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Server-render (or pre-render) H1 + first 200 words. Verify: view-source should contain the H1 text."
+  ]
+}

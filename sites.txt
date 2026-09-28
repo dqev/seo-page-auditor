@@ -1,0 +1,56 @@
+https://github.com|github code hosting
+https://stackoverflow.com|stackoverflow programming questions
+https://developer.mozilla.org/en-US/docs/Web/HTML|mdn html docs
+https://react.dev|react javascript library
+https://www.python.org|python programming language
+https://nodejs.org/en|node js runtime
+https://www.docker.com|docker containers
+https://kubernetes.io|kubernetes orchestration
+https://www.typescriptlang.org|typescript language
+https://tailwindcss.com|tailwind css framework
+https://vercel.com|vercel hosting
+https://stripe.com|stripe payments
+https://www.figma.com|figma design tool
+https://www.notion.so|notion notes
+https://linear.app|linear issue tracking
+https://web.dev|web dev google
+https://caniuse.com|browser support tables
+https://www.npmjs.com|npm packages
+https://pypi.org|python packages
+https://www.bbc.com/news|bbc news
+https://www.nytimes.com|new york times
+https://www.theverge.com|the verge tech news
+https://techcrunch.com|techcrunch startups
+https://news.ycombinator.com|hacker news
+https://dev.to|dev community
+https://css-tricks.com|css tricks
+https://www.smashingmagazine.com|smashing magazine
+https://en.wikipedia.org/wiki/Python_(programming_language)|python wikipedia
+https://www.ted.com/talks|ted talks
+https://www.amazon.com|amazon shopping
+https://www.ebay.com|ebay auctions
+https://www.etsy.com|etsy handmade
+https://www.shopify.com|shopify ecommerce
+https://www.apple.com|apple
+https://www.samsung.com| samsung
+https://www.ikea.com|ikea furniture
+https://www.airbnb.com|airbnb stays
+https://www.booking.com|booking hotels
+https://www.uber.com|uber rides
+https://git-scm.com|git version control
+https://nginx.org|nginx server
+https://www.postgresql.org|postgresql database
+https://redis.io|redis cache
+https://www.mongodb.com|mongodb database
+https://www.lemonde.fr|lemonde actualites
+https://www.spiegel.de|spiegel nachrichten
+https://www.baidu.com|baidu search
+https://hi.wikipedia.org/wiki/भारत|भारत विकिपीडिया
+https://www.x.com|x social network
+https://www.instagram.com|instagram
+https://openai.com|openai
+https://www.anthropic.com|anthropic claude
+https://huggingface.co|huggingface models
+https://arxiv.org|arxiv papers
+https://www.nasa.gov|nasa
+https://httpstat.us/404|httpstat test

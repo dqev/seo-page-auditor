@@ -1,0 +1,152 @@
+{
+  "url": "https://react.dev",
+  "final_url": "https://react.dev/",
+  "query": "react javascript library",
+  "score": 73,
+  "fetch": {
+    "title": "React",
+    "words": 910,
+    "chars": 5986,
+    "links_found": 98,
+    "html_chars": 7196,
+    "raw_html_chars": 272407,
+    "raw_h1": [
+      "React",
+      "React Videos"
+    ],
+    "fetch_h1": [
+      "React"
+    ]
+  },
+  "search": {
+    "query": "react javascript library",
+    "rank": 1,
+    "matched_url": "https://react.dev/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "React",
+        "url": "https://react.dev/"
+      },
+      {
+        "position": 2,
+        "title": "React \u2013 A JavaScript library for building user interfaces",
+        "url": "https://legacy.reactjs.org/"
+      },
+      {
+        "position": 3,
+        "title": "react/react: The library for web and native user interfaces.",
+        "url": "https://github.com/react/react"
+      },
+      {
+        "position": 4,
+        "title": "React (software)",
+        "url": "https://en.wikipedia.org/wiki/React_(software)"
+      },
+      {
+        "position": 5,
+        "title": "MUI: The React component library you always wanted",
+        "url": "https://mui.com/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'React'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 5 chars: 'React'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'React'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['React'].",
+      "fix": ""
+    },
+    {
+      "check": "Single H1",
+      "status": "FAIL",
+      "detail": "2 H1s in raw HTML: ['React', 'React Videos'].",
+      "fix": "Keep exactly one H1 per page; demote others to H2."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 910 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'React is the library for web and native user interfaces. Build user interfaces out of individual pieces called component'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "43 img(s) in raw HTML, 24 missing alt.",
+      "fix": "Add descriptive alt to 24 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://react.dev/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 98 (internal\u224834, external\u224864).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 5986 chars from 7196 chars cleaned HTML (ratio 0.83); raw ~1437 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'react javascript library' \u2192 https://react.dev/ at position 1. Snippet: 'React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScr'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['react', 'javascript', 'library'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'React'.",
+    "Keep exactly one H1 per page; demote others to H2.",
+    "Add descriptive alt to 24 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+  ]
+}

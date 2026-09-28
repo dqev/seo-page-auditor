@@ -1,0 +1,144 @@
+{
+  "url": "https://www.ikea.com",
+  "final_url": "https://www.ikea.com/",
+  "query": "ikea furniture",
+  "score": 64,
+  "fetch": {
+    "title": "Hej! Welcome to IKEA Global",
+    "words": 69,
+    "chars": 357,
+    "links_found": 163,
+    "html_chars": 434,
+    "raw_html_chars": 573800,
+    "raw_h1": [
+      "Welcome to IKEA Global!"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "ikea furniture",
+    "rank": 1,
+    "matched_url": "https://www.ikea.com/us/en/cat/furniture-fu001/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Shop Quality & Affordable Furniture",
+        "url": "https://www.ikea.com/us/en/cat/furniture-fu001/"
+      },
+      {
+        "position": 2,
+        "title": "IKEA: Shop Affordable Home Furnishings & Home Goods",
+        "url": "https://www.ikea.com/us/en/"
+      },
+      {
+        "position": 3,
+        "title": "Bedroom Furniture",
+        "url": "https://www.ikea.com/us/en/rooms/bedroom/"
+      },
+      {
+        "position": 4,
+        "title": "Living Room Furniture & D\u00e9cor",
+        "url": "https://www.ikea.com/us/en/rooms/living-room/"
+      },
+      {
+        "position": 5,
+        "title": "Real-Life Review: IKEA Furniture Worth Repurchasing",
+        "url": "https://www.youtube.com/watch?v=Ab2yN6rURXw"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Hej! Welcome to IKEA Global'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 27 chars: 'Hej! Welcome to IKEA Global'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Hej! Welcome to IKEA Global'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Welcome to IKEA Global!'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 69 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Furniture, home accessories, design ideas and inspiration for big dreams and small budgets. A better everyday life begin'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "35 img(s) in raw HTML, 9 missing alt.",
+      "fix": "Add descriptive alt to 9 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.ikea.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 163 (internal\u2248136, external\u224827).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~506 words but Fetch extracts 69 (86% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'ikea furniture' \u2192 https://www.ikea.com/us/en/cat/furniture-fu001/ at position 1. Snippet: 'We have made it our purpose to have a wide range of affordable furniture available in different styles that complement your home including m'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['ikea', 'furniture'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Hej! Welcome to IKEA Global'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 9 image(s). AI tools + image search read alt, not pixels.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

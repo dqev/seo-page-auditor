@@ -1,0 +1,144 @@
+{
+  "url": "https://www.figma.com",
+  "final_url": "https://www.figma.com/",
+  "query": "figma design tool",
+  "score": 79,
+  "fetch": {
+    "title": "Figma: The collaborative canvas for design, code, and AI",
+    "words": 225,
+    "chars": 1374,
+    "links_found": 148,
+    "html_chars": 2048,
+    "raw_html_chars": 1695160,
+    "raw_h1": [
+      "The full-stack creative canvas"
+    ],
+    "fetch_h1": [
+      "The full-stack creative canvas"
+    ]
+  },
+  "search": {
+    "query": "figma design tool",
+    "rank": 1,
+    "matched_url": "https://www.figma.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Figma: The collaborative canvas for design, code, and AI",
+        "url": "https://www.figma.com/"
+      },
+      {
+        "position": 2,
+        "title": "The Power of Figma as a Design Tool",
+        "url": "https://www.toptal.com/designers/ui/figma-design-tool"
+      },
+      {
+        "position": 3,
+        "title": "What is Figma? Introduction to Design Tool - Artjoker",
+        "url": "https://artjoker.net/blog/what-is-figma-a-brief-introduction-to-the-collaborative-interface-design-tool/"
+      },
+      {
+        "position": 4,
+        "title": "Figma",
+        "url": "https://en.wikipedia.org/wiki/Figma"
+      },
+      {
+        "position": 5,
+        "title": "Will you use Figma as a design tool for your projects?",
+        "url": "https://www.quora.com/Will-you-use-Figma-as-a-design-tool-for-your-projects"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Figma: The collaborative canvas for design, code, and AI'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 56 chars: 'Figma: The collaborative canvas for design, code, and AI'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['The full-stack creative canvas'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 225 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Figma is the canvas where design, code, and AI come together. From first idea to shipped product \u2014 go from concept to pr'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "88 img(s) in raw HTML, 3 missing alt.",
+      "fix": "Add descriptive alt to 3 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.figma.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 148 (internal\u2248144, external\u22484).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~596 words but Fetch extracts 225 (62% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'figma design tool' \u2192 https://www.figma.com/ at position 1. Snippet: 'Figma is the canvas where design, code, and AI come together. From first idea to shipped product \u2014 go from concept to production with your w'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['figma', 'design', 'tool'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 3 image(s). AI tools + image search read alt, not pixels.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

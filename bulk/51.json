@@ -1,0 +1,141 @@
+{
+  "url": "https://openai.com",
+  "final_url": "https://openai.com/",
+  "query": "openai",
+  "score": 71,
+  "fetch": {
+    "title": "OpenAI | Research & Deployment",
+    "words": 171,
+    "chars": 1456,
+    "links_found": 92,
+    "html_chars": 1501,
+    "raw_html_chars": 457562,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "openai",
+    "rank": 1,
+    "matched_url": "https://openai.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "OpenAI | Research & Deployment",
+        "url": "https://openai.com/"
+      },
+      {
+        "position": 2,
+        "title": "OpenAI",
+        "url": "https://en.wikipedia.org/wiki/OpenAI"
+      },
+      {
+        "position": 3,
+        "title": "OpenAI",
+        "url": "https://x.com/OpenAI"
+      },
+      {
+        "position": 4,
+        "title": "OpenAI",
+        "url": "https://www.linkedin.com/company/openai"
+      },
+      {
+        "position": 5,
+        "title": "OpenAI Pauses Training Its Most Powerful Models After ...",
+        "url": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'OpenAI | Research & Deployment'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 30 chars: 'OpenAI | Research & Deployment'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 171 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level pro'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "20 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://openai.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 92 (internal\u224876, external\u224816).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~482 words but Fetch extracts 171 (65% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'openai' \u2192 https://openai.com/ at position 1. Snippet: 'We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['openai'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

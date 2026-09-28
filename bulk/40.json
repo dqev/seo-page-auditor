@@ -1,0 +1,145 @@
+{
+  "url": "https://git-scm.com",
+  "final_url": "https://git-scm.com/",
+  "query": "git version control",
+  "score": 43,
+  "fetch": {
+    "title": "Git",
+    "words": 74,
+    "chars": 475,
+    "links_found": 20,
+    "html_chars": 749,
+    "raw_html_chars": 6295,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "git version control",
+    "rank": 1,
+    "matched_url": "https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "1.1 Getting Started - About Version Control",
+        "url": "https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control"
+      },
+      {
+        "position": 2,
+        "title": "Git",
+        "url": "https://git-scm.com/"
+      },
+      {
+        "position": 3,
+        "title": "Would someone be able to explain Git version control and ...",
+        "url": "https://www.reddit.com/r/godot/comments/1bdhiab/would_someone_be_able_to_explain_git_version/"
+      },
+      {
+        "position": 4,
+        "title": "What Is Git Version Control?",
+        "url": "https://www.geeksforgeeks.org/git/what-is-git-version-control/"
+      },
+      {
+        "position": 5,
+        "title": "Git",
+        "url": "https://en.wikipedia.org/wiki/Git"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Git'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 3 chars: 'Git'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Git'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 74 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "FAIL",
+      "detail": "Meta description: ''.",
+      "fix": "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet."
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "10 img(s) in raw HTML, 9 missing alt.",
+      "fix": "Add descriptive alt to 9 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 20 (internal\u224817, external\u22483).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 475 chars from 749 chars cleaned HTML (ratio 0.63); raw ~140 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'git version control' \u2192 https://git-scm.com/book/ms/v2/Getting-Started-About-Version-Control at position 1. Snippet: 'Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['version', 'control'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Git'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet.",
+    "Add descriptive alt to 9 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+  ]
+}

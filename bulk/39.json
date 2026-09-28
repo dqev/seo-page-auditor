@@ -1,0 +1,156 @@
+{
+  "url": "https://www.uber.com",
+  "final_url": "https://www.uber.com",
+  "query": "uber rides",
+  "score": 67,
+  "fetch": {
+    "title": "Explore the Uber Platform | Uber United States",
+    "words": 486,
+    "chars": 2843,
+    "links_found": 161,
+    "html_chars": 2964,
+    "raw_html_chars": 0,
+    "raw_h1": [
+      "Go anywhere with Uber",
+      "Go anywhere with Uber",
+      "Go anywhere with Uber"
+    ],
+    "fetch_h1": [
+      "Go anywhere with Uber",
+      "Go anywhere with Uber",
+      "Go anywhere with Uber"
+    ]
+  },
+  "search": {
+    "query": "uber rides",
+    "rank": 1,
+    "matched_url": "https://m.uber.com/go/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Request a Ride with Uber",
+        "url": "https://m.uber.com/go/"
+      },
+      {
+        "position": 2,
+        "title": "Ride with Uber | Request Rides 24/7 | Official Uber Site",
+        "url": "https://www.uber.com/us/en/ride/"
+      },
+      {
+        "position": 3,
+        "title": "Uber: Rides, eats, hotels - Apps on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.ubercab&hl=en_US"
+      },
+      {
+        "position": 4,
+        "title": "A Guide to Getting Around in Brevard, NC",
+        "url": "https://www.uber.com/global/en/r/cities/brevard-nc-us/"
+      },
+      {
+        "position": 5,
+        "title": "Brevard Taxis Near Me & Yellow Cabs | Request Rides 24/7",
+        "url": "https://www.uber.com/us/en/r/cities/taxi/brevard-nc-us/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Explore the Uber Platform | Uber United States'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 46 chars: 'Explore the Uber Platform | Uber United States'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 3 H1(s): ['Go anywhere with Uber', 'Go anywhere with Uber', 'Go anywhere with Uber'].",
+      "fix": ""
+    },
+    {
+      "check": "Single H1",
+      "status": "FAIL",
+      "detail": "3 H1s in raw HTML: ['Go anywhere with Uber', 'Go anywhere with Uber', 'Go anywhere with Uber'].",
+      "fix": "Keep exactly one H1 per page; demote others to H2."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 486 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Learn how you can leverage the Uber platform and apps to earn more, eat, commute, get a ride, simplify business travel, '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "FAIL",
+      "detail": "No <html lang> in raw HTML.",
+      "fix": "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 161 (internal\u2248129, external\u224832).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2843 chars from 2964 chars cleaned HTML (ratio 0.96); raw ~486 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'uber rides' \u2192 https://m.uber.com/go/ at position 1. Snippet: 'Book a ride now or get a price estimate on our website. Are you new to Uber? Sign up today and request a ride at any time. Get a ride Pickup'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['uber', 'rides'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Keep exactly one H1 per page; demote others to H2.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+  ]
+}

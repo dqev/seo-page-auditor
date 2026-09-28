@@ -1,0 +1,139 @@
+{
+  "url": "https://www.notion.so",
+  "final_url": "https://www.notion.com/",
+  "query": "notion notes",
+  "score": 54,
+  "fetch": {
+    "title": "The AI workspace that works for you. | Notion",
+    "words": 132,
+    "chars": 782,
+    "links_found": 104,
+    "html_chars": 1132,
+    "raw_html_chars": 240312,
+    "raw_h1": [
+      "Where teams and agents Think together."
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "notion notes",
+    "rank": null,
+    "matched_url": null,
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Meeting notes & docs in Notion",
+        "url": "https://www.notion.com/notes"
+      },
+      {
+        "position": 2,
+        "title": "Notion is a great \"note taking\" app?",
+        "url": "https://www.reddit.com/r/Notion/comments/137whhk/notion_is_a_great_note_taking_app/"
+      },
+      {
+        "position": 3,
+        "title": "Notion: Notes, Tasks, AI - App Store - Apple",
+        "url": "https://apps.apple.com/us/app/notion-notes-tasks-ai/id1232780281"
+      },
+      {
+        "position": 4,
+        "title": "The Best Ways To Take Notes in Notion | My Second Brain Guide!",
+        "url": "https://www.youtube.com/watch?v=wm_9blITlwQ"
+      },
+      {
+        "position": 5,
+        "title": "Notion: The AI workspace that works for you.",
+        "url": "https://www.notion.com/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'The AI workspace that works for you. | Notion'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 45 chars: 'The AI workspace that works for you. | Notion'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Where teams and agents Think together.'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 132 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, fas'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "58 img(s) in raw HTML, 52 missing alt.",
+      "fix": "Add descriptive alt to 52 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.notion.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-us' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 104 (internal\u22481, external\u2248103).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~405 words but Fetch extracts 132 (67% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query",
+      "status": "FAIL",
+      "detail": "Domain 'notion.so' not in top 9 for 'notion notes'. Top hit: 'https://www.notion.com/notes'.",
+      "fix": "Check: 1) robots/sitemap includes URL, 2) title+H1 contain query terms, 3) get 1\u20132 internal links from indexed pages, 4) Fetch in Search Console / request indexing. Re-run: python audit.py https://www.notion.so --query 'notion notes'."
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 52 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise.",
+    "Check: 1) robots/sitemap includes URL, 2) title+H1 contain query terms, 3) get 1\u20132 internal links from indexed pages, 4) Fetch in Search Console / request indexing. Re-run: python audit.py https://www.notion.so --query 'notion notes'."
+  ]
+}

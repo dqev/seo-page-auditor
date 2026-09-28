@@ -1,0 +1,150 @@
+{
+  "url": "https://stripe.com",
+  "final_url": "https://stripe.com/",
+  "query": "stripe payments",
+  "score": 87,
+  "fetch": {
+    "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+    "words": 1106,
+    "chars": 7565,
+    "links_found": 191,
+    "html_chars": 8680,
+    "raw_html_chars": 700314,
+    "raw_h1": [
+      "Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue models \u2013 from your first transaction to your billionth.",
+      "Financial infrastructure to grow your revenue. Accept payments, offer financial services and implement custom revenue models \u2013 from your first transaction to your billionth."
+    ],
+    "fetch_h1": [
+      "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models\u2014from your first transaction to your billionth."
+    ]
+  },
+  "search": {
+    "query": "stripe payments",
+    "rank": 1,
+    "matched_url": "https://stripe.com/payments",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Global Payment Processing Platform",
+        "url": "https://stripe.com/payments"
+      },
+      {
+        "position": 2,
+        "title": "Stripe Login | Sign in to the Stripe Dashboard",
+        "url": "https://dashboard.stripe.com/login"
+      },
+      {
+        "position": 3,
+        "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+        "url": "https://stripe.com/"
+      },
+      {
+        "position": 4,
+        "title": "What Is Stripe, and How Does It Work to Accept Payments?",
+        "url": "https://www.nerdwallet.com/business/software/learn/what-is-stripe"
+      },
+      {
+        "position": 5,
+        "title": "Stripe, Inc.",
+        "url": "https://en.wikipedia.org/wiki/Stripe,_Inc."
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Stripe | Financial Infrastructure to Grow Your Revenue'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 54 chars: 'Stripe | Financial Infrastructure to Grow Your Revenue'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Financial infrastructure to grow your revenue. Accept paymen'].",
+      "fix": ""
+    },
+    {
+      "check": "Single H1",
+      "status": "FAIL",
+      "detail": "2 H1s in raw HTML: ['Financial infrastructure to grow your revenue. Acc', 'Financial infrastructure to grow your revenue. Acc'].",
+      "fix": "Keep exactly one H1 per page; demote others to H2."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 1106 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing model'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "31 img(s) in raw HTML, 27 missing alt.",
+      "fix": "Add descriptive alt to 27 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://stripe.com/in'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-IN' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 191 (internal\u2248185, external\u22486).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 7565 chars from 8680 chars cleaned HTML (ratio 0.87); raw ~1905 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'stripe payments' \u2192 https://stripe.com/payments at position 1. Snippet: 'Capture more revenue with a unified payments solution that eliminates the need for one-off merchant account, payment gateway, and processor '.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['stripe', 'payments'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Keep exactly one H1 per page; demote others to H2.",
+    "Add descriptive alt to 27 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

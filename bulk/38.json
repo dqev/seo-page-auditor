@@ -1,0 +1,144 @@
+{
+  "url": "https://www.booking.com",
+  "final_url": "https://www.booking.com/?chal_t=1790608144539&force_referer=",
+  "query": "booking hotels",
+  "score": 64,
+  "fetch": {
+    "title": "The largest selection of hotels, homes, and vacation rentals",
+    "words": 181,
+    "chars": 1068,
+    "links_found": 236,
+    "html_chars": 1304,
+    "raw_html_chars": 3962,
+    "raw_h1": [
+      "JavaScript is disabled"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "booking hotels",
+    "rank": 1,
+    "matched_url": "https://www.booking.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+        "url": "https://www.booking.com/"
+      },
+      {
+        "position": 2,
+        "title": "Hotels.com - Deals & Discounts for Hotel Reservations from ...",
+        "url": "https://www.hotels.com/"
+      },
+      {
+        "position": 3,
+        "title": "Booking.com: Hotels & Travel - Apps on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.booking&hl=en_US"
+      },
+      {
+        "position": 4,
+        "title": "Hotels: Cheap Hotel Deals on Tripadvisor",
+        "url": "https://www.tripadvisor.com/Hotels"
+      },
+      {
+        "position": 5,
+        "title": "Cheap Hotel Deals | Compare & Book with Skyscanner",
+        "url": "https://www.skyscanner.com/hotels"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'The largest selection of hotels, homes, and vacation rentals'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 60 chars: 'The largest selection of hotels, homes, and vacation rentals'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['JavaScript is disabled'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 181 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Whether you\u2019re looking for hotels, homes, or vacation rentals, you\u2019ll always find the guaranteed best price. Browse our '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 236 (internal\u2248232, external\u22484).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 1068 chars from 1304 chars cleaned HTML (ratio 0.82); raw ~0 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'booking hotels' \u2192 https://www.booking.com/ at position 1. Snippet: 'Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions \u2013 build your perfect trip on '.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['booking', 'hotels'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+  ]
+}

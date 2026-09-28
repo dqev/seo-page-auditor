@@ -1,0 +1,142 @@
+{
+  "url": "https://www.ted.com/talks",
+  "final_url": "https://www.ted.com/talks",
+  "query": "ted talks",
+  "score": 64,
+  "fetch": {
+    "title": "TED Talks",
+    "words": 246,
+    "chars": 1592,
+    "links_found": 58,
+    "html_chars": 1641,
+    "raw_html_chars": 167897,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "ted talks",
+    "rank": 1,
+    "matched_url": "https://www.ted.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "TED Talks",
+        "url": "https://www.ted.com/"
+      },
+      {
+        "position": 2,
+        "title": "TED",
+        "url": "https://www.youtube.com/ted"
+      },
+      {
+        "position": 3,
+        "title": "TED (conference)",
+        "url": "https://en.wikipedia.org/wiki/TED_(conference)"
+      },
+      {
+        "position": 4,
+        "title": "TED",
+        "url": "https://www.youtube.com/@TED"
+      },
+      {
+        "position": 5,
+        "title": "TED Talks Daily - Podcast",
+        "url": "https://podcasts.apple.com/us/podcast/ted-talks-daily/id160904630"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'TED Talks'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 9 chars: 'TED Talks'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'TED Talks'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 246 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'TED Talks are influential videos from expert speakers on education, business, science, tech and creativity, with subtitl'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.ted.com/talks'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 58 (internal\u224849, external\u22489).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~396 words but Fetch extracts 246 (38% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'ted talks' \u2192 https://www.ted.com/ at position 1. Snippet: 'TED is a nonprofit that shares educational and inspiring ideas with billions of people worldwide to catalyze change across individuals, comm'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['talks'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'TED Talks'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

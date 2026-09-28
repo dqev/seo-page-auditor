@@ -1,0 +1,143 @@
+{
+  "url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  "final_url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  "query": "mdn html docs",
+  "score": 86,
+  "fetch": {
+    "title": "HTML: HyperText Markup Language | MDN",
+    "words": 1074,
+    "chars": 7045,
+    "links_found": 463,
+    "html_chars": 8964,
+    "raw_html_chars": 186329,
+    "raw_h1": [
+      "HTML: HyperText Markup Language"
+    ],
+    "fetch_h1": [
+      "HTML: HyperText Markup Language"
+    ]
+  },
+  "search": {
+    "query": "mdn html docs",
+    "rank": 1,
+    "matched_url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "HTML: HyperText Markup Language - MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+      },
+      {
+        "position": 2,
+        "title": "MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/"
+      },
+      {
+        "position": 3,
+        "title": "Structuring content with HTML - Learn web development | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content"
+      },
+      {
+        "position": 4,
+        "title": "HTML - Glossary - MDN Web Docs - Mozilla",
+        "url": "https://developer.mozilla.org/en-US/docs/Glossary/HTML"
+      },
+      {
+        "position": 5,
+        "title": "Document - Web APIs - MDN Web Docs - Mozilla",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'HTML: HyperText Markup Language | MDN'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 37 chars: 'HTML: HyperText Markup Language | MDN'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['HTML: HyperText Markup Language'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 1074 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of we'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://developer.mozilla.org/en-US/docs/Web/HTML'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 463 (internal\u2248445, external\u224818).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 7045 chars from 8964 chars cleaned HTML (ratio 0.79); raw ~1842 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'mdn html docs' \u2192 https://developer.mozilla.org/en-US/docs/Web/HTML at position 1. Snippet: 'The HTML guides help you build with HTML on the web. They cover topics such as forms, CORS, content preloading, and responsive images. HTML '.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['html', 'docs']. Missing from visible surfaces: ['docs'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['docs']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Work missing terms into title + H1 + first 100 words: ['docs']. Then request re-indexing."
+  ]
+}

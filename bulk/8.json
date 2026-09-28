@@ -1,0 +1,143 @@
+{
+  "url": "https://kubernetes.io",
+  "final_url": "https://kubernetes.io/",
+  "query": "kubernetes orchestration",
+  "score": 71,
+  "fetch": {
+    "title": "Production-Grade Container Orchestration",
+    "words": 494,
+    "chars": 3368,
+    "links_found": 66,
+    "html_chars": 3696,
+    "raw_html_chars": 41531,
+    "raw_h1": [
+      "Production-Grade Container Orchestration"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "kubernetes orchestration",
+    "rank": 3,
+    "matched_url": "https://kubernetes.io/docs/concepts/overview/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "What is Kubernetes Orchestration?",
+        "url": "https://www.mirantis.com/cloud-native-concepts/getting-started-with-kubernetes/what-is-kubernetes-orchestration/"
+      },
+      {
+        "position": 2,
+        "title": "What is container orchestration?",
+        "url": "https://www.redhat.com/en/topics/containers/what-is-container-orchestration"
+      },
+      {
+        "position": 3,
+        "title": "Overview",
+        "url": "https://kubernetes.io/docs/concepts/overview/"
+      },
+      {
+        "position": 4,
+        "title": "Choosing A Kubernetes Orchestration Platform Or Tool",
+        "url": "https://www.suse.com/c/the-ultimate-resource-for-choosing-a-hybrid-it-platform/"
+      },
+      {
+        "position": 5,
+        "title": "What is container orchestration?",
+        "url": "https://cloud.google.com/discover/what-is-container-orchestration"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Kubernetes'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 10 chars: 'Kubernetes'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Kubernetes'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Production-Grade Container Orchestration'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 494 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containeri'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "6 img(s) in raw HTML, 5 missing alt.",
+      "fix": "Add descriptive alt to 5 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 66 (internal\u224849, external\u224817).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 3368 chars from 3696 chars cleaned HTML (ratio 0.91); raw ~622 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 3)",
+      "status": "PASS",
+      "detail": "Query 'kubernetes orchestration' \u2192 https://kubernetes.io/docs/concepts/overview/ at position 3. Snippet: 'Storage orchestration Kubernetes allows you to automatically mount a storage system of your choice, such as local storage, public cloud prov'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['kubernetes', 'orchestration'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Kubernetes'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 5 image(s). AI tools + image search read alt, not pixels.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+  ]
+}

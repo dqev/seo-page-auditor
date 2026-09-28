@@ -1,0 +1,139 @@
+{
+  "url": "https://www.spiegel.de",
+  "final_url": "https://www.spiegel.de/",
+  "query": "spiegel nachrichten",
+  "score": 86,
+  "fetch": {
+    "title": "DER SPIEGEL | Online-Nachrichten",
+    "words": 727,
+    "chars": 4745,
+    "links_found": 638,
+    "html_chars": 6001,
+    "raw_html_chars": 1953514,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "spiegel nachrichten",
+    "rank": 1,
+    "matched_url": "https://www.spiegel.de/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "DER SPIEGEL | Online-Nachrichten",
+        "url": "https://www.spiegel.de/"
+      },
+      {
+        "position": 2,
+        "title": "DER SPIEGEL (@derspiegel) / X",
+        "url": "https://x.com/derspiegel"
+      },
+      {
+        "position": 3,
+        "title": "Aktuelle News: Nachrichten aus Berlin und der Welt",
+        "url": "https://www.tagesspiegel.de/"
+      },
+      {
+        "position": 4,
+        "title": "Exclusive Insights into Putin's Isolated Dictatorship | SPIEGEL TV",
+        "url": "https://www.youtube.com/watch?v=oOLqIJxK0aI&vl=en-US"
+      },
+      {
+        "position": 5,
+        "title": "Hells Angels in Gangster Rap \u2013 Rappers Seeking Protection (1)",
+        "url": "https://www.youtube.com/watch?v=AO6-b2U3lmo"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'DER SPIEGEL | Online-Nachrichten'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 32 chars: 'DER SPIEGEL | Online-Nachrichten'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 727 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Deutschlands f\u00fchrende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "667 img(s) in raw HTML, 596 missing alt.",
+      "fix": "Add descriptive alt to 596 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.spiegel.de/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='de' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 638 (internal\u2248606, external\u224832).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 4745 chars from 6001 chars cleaned HTML (ratio 0.79); raw ~5935 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'spiegel nachrichten' \u2192 https://www.spiegel.de/ at position 1. Snippet: 'Deutschlands f\u00fchrende Nachrichtenseite. Alles Wichtige aus Politik, Wirtschaft, Sport, Kultur, Wissenschaft, Technik und mehr.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['spiegel', 'nachrichten'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 596 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

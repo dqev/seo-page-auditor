@@ -1,0 +1,142 @@
+{
+  "url": "https://www.bbc.com/news",
+  "final_url": "https://www.bbc.com/news",
+  "query": "bbc news",
+  "score": 79,
+  "fetch": {
+    "title": "BBC News - Breaking news, video and the latest top stories from the U.S. and around the world",
+    "words": 1178,
+    "chars": 7575,
+    "links_found": 198,
+    "html_chars": 7640,
+    "raw_html_chars": 375204,
+    "raw_h1": [
+      "News"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "bbc news",
+    "rank": 1,
+    "matched_url": "https://www.bbc.com/news",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Breaking news, video and the latest top stories from the ...",
+        "url": "https://www.bbc.com/news"
+      },
+      {
+        "position": 2,
+        "title": "BBC Home - Breaking News, World News, US News, Sports ...",
+        "url": "https://www.bbc.com/"
+      },
+      {
+        "position": 3,
+        "title": "BBC News",
+        "url": "https://www.youtube.com/channel/UC16niRr50-MSBwiO3YDb3RA"
+      },
+      {
+        "position": 4,
+        "title": "BBC News | London",
+        "url": "https://www.facebook.com/bbcnews/"
+      },
+      {
+        "position": 5,
+        "title": "BBC News (@bbcnews) \u00b7 London",
+        "url": "https://www.instagram.com/bbcnews/?hl=en"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'BBC News - Breaking news, video and the latest top stories from the U.S. and aro'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 93 chars: 'BBC News - Breaking news, video and the latest top stories from the U.S. and aro'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'BBC News - Breaking news, video and the latest top stories from the U.S. and around the world'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['News'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 1178 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "44 img(s) in raw HTML, 22 missing alt.",
+      "fix": "Add descriptive alt to 22 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.bbc.com/news'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-GB' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 198 (internal\u2248193, external\u22485).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 7575 chars from 7640 chars cleaned HTML (ratio 0.99); raw ~1617 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'bbc news' \u2192 https://www.bbc.com/news at position 1. Snippet: 'Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and U.K. news as well as'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['news'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'BBC News - Breaking news, video and the latest top stories from the U.S. and around the world'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 22 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

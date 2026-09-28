@@ -1,0 +1,140 @@
+{
+  "url": "https://www.nasa.gov",
+  "final_url": "https://www.nasa.gov/",
+  "query": "nasa",
+  "score": 79,
+  "fetch": {
+    "title": "NASA",
+    "words": 336,
+    "chars": 2214,
+    "links_found": 284,
+    "html_chars": 3097,
+    "raw_html_chars": 360364,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "nasa",
+    "rank": 1,
+    "matched_url": "https://www.nasa.gov/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "NASA",
+        "url": "https://www.nasa.gov/"
+      },
+      {
+        "position": 2,
+        "title": "NASA",
+        "url": "https://en.wikipedia.org/wiki/NASA"
+      },
+      {
+        "position": 3,
+        "title": "NASA",
+        "url": "https://x.com/NASA"
+      },
+      {
+        "position": 4,
+        "title": "NASA (@nasa) \u2022 Instagram photos and videos",
+        "url": "https://www.instagram.com/nasa/?hl=en"
+      },
+      {
+        "position": 5,
+        "title": "National Aeronautics and Space Administration (@NASA)",
+        "url": "https://www.facebook.com/NASA/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'NASA'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 4 chars: 'NASA'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'NASA'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 336 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: \"NASA.gov brings you the latest news, images and videos from America's space agency, pioneering the future in space explo\".",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "75 img(s) in raw HTML, 33 missing alt.",
+      "fix": "Add descriptive alt to 33 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.nasa.gov/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 284 (internal\u2248279, external\u22485).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2214 chars from 3097 chars cleaned HTML (ratio 0.71); raw ~1605 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'nasa' \u2192 https://www.nasa.gov/ at position 1. Snippet: \"NASA.gov brings you the latest news, images and videos from America's space agency, pioneering the future in space exploration, scientific d\".",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['nasa'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'NASA'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 33 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

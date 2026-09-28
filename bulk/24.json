@@ -1,0 +1,144 @@
+{
+  "url": "https://news.ycombinator.com",
+  "final_url": "https://news.ycombinator.com/",
+  "query": "hacker news",
+  "score": 50,
+  "fetch": {
+    "title": "Hacker News",
+    "words": 743,
+    "chars": 3877,
+    "links_found": 228,
+    "html_chars": 3919,
+    "raw_html_chars": 34449,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "hacker news",
+    "rank": 1,
+    "matched_url": "https://news.ycombinator.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Hacker News",
+        "url": "https://news.ycombinator.com/"
+      },
+      {
+        "position": 2,
+        "title": "The Hacker News | #1 Trusted Source for Cybersecurity News",
+        "url": "https://thehackernews.com/"
+      },
+      {
+        "position": 3,
+        "title": "Hacker News",
+        "url": "https://en.wikipedia.org/wiki/Hacker_News"
+      },
+      {
+        "position": 4,
+        "title": "Hacker News Recap | Podcast on Spotify",
+        "url": "https://open.spotify.com/show/5T24sjkV7tVRNybotteILY"
+      },
+      {
+        "position": 5,
+        "title": "Highlights by Hacker News (@hackernews) / ...",
+        "url": "https://x.com/hackernews/highlights"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Hacker News'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 11 chars: 'Hacker News'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Hacker News'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 743 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "FAIL",
+      "detail": "Meta description: ''.",
+      "fix": "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet."
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "2 img(s) in raw HTML, 2 missing alt.",
+      "fix": "Add descriptive alt to 2 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 228 (internal\u2248195, external\u224833).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 3877 chars from 3919 chars cleaned HTML (ratio 0.99); raw ~746 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'hacker news' \u2192 https://news.ycombinator.com/ at position 1. Snippet: 'Hacker News \u00b7 1. Parley: Federated, decentralised chat that speaks plain IRC (mills.io) \u00b7 2. AI companies in race to demonstrate their model'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['hacker', 'news'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Hacker News'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet.",
+    "Add descriptive alt to 2 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+  ]
+}

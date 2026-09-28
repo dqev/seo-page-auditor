@@ -1,0 +1,141 @@
+{
+  "url": "https://web.dev",
+  "final_url": "https://web.dev/",
+  "query": "web dev google",
+  "score": 71,
+  "fetch": {
+    "title": "web.dev",
+    "words": 929,
+    "chars": 5774,
+    "links_found": 127,
+    "html_chars": 8696,
+    "raw_html_chars": 132472,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "web dev google",
+    "rank": 1,
+    "matched_url": "https://web.dev/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "web.dev",
+        "url": "https://web.dev/"
+      },
+      {
+        "position": 2,
+        "title": "Google for Developers | Build with Gemini",
+        "url": "https://developers.google.com/"
+      },
+      {
+        "position": 3,
+        "title": "Web.dev by Google (web.dev) : r/programming",
+        "url": "https://www.reddit.com/r/programming/comments/9wou2u/webdev_by_google_webdev/"
+      },
+      {
+        "position": 4,
+        "title": "Heard about web.dev from Google?",
+        "url": "https://dev.to/trishiraj/heard-about-webdev-from-google-536a"
+      },
+      {
+        "position": 5,
+        "title": "Google launches new website for web developers",
+        "url": "https://sdtimes.com/webdev/google-launches-new-website-for-web-developers/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'web.dev'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 7 chars: 'web.dev'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'web.dev'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 929 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Guidance to build modern web experiences that work in every browser.\\n'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "10 img(s) in raw HTML, 8 missing alt.",
+      "fix": "Add descriptive alt to 8 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 3 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://web.dev/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 127 (internal\u2248117, external\u224810).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 5774 chars from 8696 chars cleaned HTML (ratio 0.66); raw ~1301 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'web dev google' \u2192 https://web.dev/ at position 1. Snippet: 'The web platform is a constantly evolving ecosystem of browser features and APIs for developers to make websites that are easy and delightfu'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['google']. Missing from visible surfaces: ['google'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['google']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'web.dev'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add descriptive alt to 8 image(s). AI tools + image search read alt, not pixels.",
+    "Work missing terms into title + H1 + first 100 words: ['google']. Then request re-indexing."
+  ]
+}

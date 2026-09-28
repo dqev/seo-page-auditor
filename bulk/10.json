@@ -1,0 +1,145 @@
+{
+  "url": "https://tailwindcss.com",
+  "final_url": "https://tailwindcss.com/",
+  "query": "tailwind css framework",
+  "score": 71,
+  "fetch": {
+    "title": "Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.",
+    "words": 802,
+    "chars": 6076,
+    "links_found": 80,
+    "html_chars": 7224,
+    "raw_html_chars": 877824,
+    "raw_h1": [
+      "Rapidly build modern websites without ever leaving your HTML."
+    ],
+    "fetch_h1": [
+      "Rapidly build modern websites without ever leaving your HTML."
+    ]
+  },
+  "search": {
+    "query": "tailwind css framework",
+    "rank": 1,
+    "matched_url": "https://tailwindcss.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Tailwind CSS - Rapidly build modern websites without ever ...",
+        "url": "https://tailwindcss.com/"
+      },
+      {
+        "position": 2,
+        "title": "Tailwind CSS: Can someone explain to me what is the ...",
+        "url": "https://www.reddit.com/r/css/comments/1ch49nx/tailwind_css_can_someone_explain_to_me_what_is/"
+      },
+      {
+        "position": 3,
+        "title": "What is actually tailwind css? What's the hype about it",
+        "url": "https://www.reddit.com/r/css/comments/1m2yexj/what_is_actually_tailwind_css_whats_the_hype/"
+      },
+      {
+        "position": 4,
+        "title": "What is Tailwind CSS and what are its pros and cons?",
+        "url": "https://www.quora.com/What-is-Tailwind-CSS-and-what-are-its-pros-and-cons"
+      },
+      {
+        "position": 5,
+        "title": "Tailwind CSS",
+        "url": "https://en.wikipedia.org/wiki/Tailwind_CSS"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 76 chars: 'Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Rapidly build modern websites without ever leaving your HTML'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 802 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "40 img(s) in raw HTML, 25 missing alt.",
+      "fix": "Add descriptive alt to 25 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 80 (internal\u224819, external\u224861).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 6076 chars from 7224 chars cleaned HTML (ratio 0.84); raw ~1144 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'tailwind css framework' \u2192 https://tailwindcss.com/ at position 1. Snippet: 'Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['tailwind', 'framework'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.'.",
+    "Add descriptive alt to 25 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+  ]
+}

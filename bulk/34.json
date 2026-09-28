@@ -1,0 +1,144 @@
+{
+  "url": "https://www.apple.com",
+  "final_url": "https://www.apple.com/",
+  "query": "apple",
+  "score": 64,
+  "fetch": {
+    "title": "Apple",
+    "words": 118,
+    "chars": 655,
+    "links_found": 142,
+    "html_chars": 963,
+    "raw_html_chars": 254048,
+    "raw_h1": [
+      "Apple"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "apple",
+    "rank": 1,
+    "matched_url": "https://www.apple.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Apple",
+        "url": "https://www.apple.com/"
+      },
+      {
+        "position": 2,
+        "title": "iCloud",
+        "url": "https://www.icloud.com/"
+      },
+      {
+        "position": 3,
+        "title": "Apple Inc.",
+        "url": "https://en.wikipedia.org/wiki/Apple_Inc."
+      },
+      {
+        "position": 4,
+        "title": "Apple",
+        "url": "https://x.com/Apple"
+      },
+      {
+        "position": 5,
+        "title": "apple \u2022 Instagram photos and videos",
+        "url": "https://www.instagram.com/apple/?hl=en"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Apple'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 5 chars: 'Apple'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Apple'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Apple'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 118 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore ac'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "101 img(s) in raw HTML, 84 missing alt.",
+      "fix": "Add descriptive alt to 84 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 3 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.apple.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 142 (internal\u2248141, external\u22481).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~931 words but Fetch extracts 118 (87% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'apple' \u2192 https://www.apple.com/ at position 1. Snippet: 'Discover the innovative world of Apple and shop everything iPhone, iPad, Apple Watch, Mac, and Apple TV, plus explore accessories, entertain'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['apple'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Apple'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 84 image(s). AI tools + image search read alt, not pixels.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "url": "https://www.x.com",
+  "final_url": "https://x.com/",
+  "query": "x social network",
+  "score": 60,
+  "fetch": {
+    "title": "X. It\u2019s what\u2019s happening",
+    "words": 72,
+    "chars": 433,
+    "links_found": 27,
+    "html_chars": 548,
+    "raw_html_chars": 34651,
+    "raw_h1": [
+      "Happening now.",
+      "See what\u2019s happening"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "x social network",
+    "rank": 1,
+    "matched_url": "https://x.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "X - Official Site",
+        "url": "https://x.com/"
+      },
+      {
+        "position": 2,
+        "title": "X (@X) on X - x.com",
+        "url": "https://x.com/X"
+      },
+      {
+        "position": 3,
+        "title": "X (social network) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/X_(social_network)"
+      },
+      {
+        "position": 4,
+        "title": "Download the X app",
+        "url": "https://help.x.com/en/using-x/download-the-x-app"
+      },
+      {
+        "position": 5,
+        "title": "How to sign up for X and create a new X account",
+        "url": "https://help.x.com/en/using-x/create-x-account"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'X. It\u2019s what\u2019s happening / X'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 28 chars: 'X. It\u2019s what\u2019s happening / X'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'X. It\u2019s what\u2019s happening / X'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Happening now.', 'See what\u2019s happening'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Single H1",
+      "status": "FAIL",
+      "detail": "2 H1s in raw HTML: ['Happening now.', 'See what\u2019s happening'].",
+      "fix": "Keep exactly one H1 per page; demote others to H2."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 72 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://x.com/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 27 (internal\u224824, external\u22483).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 433 chars from 548 chars cleaned HTML (ratio 0.79); raw ~82 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'x social network' \u2192 https://x.com/ at position 1. Snippet: 'From breaking news and entertainment to sports and politics, get the full story with all the live commentary.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['social', 'network']. Missing from visible surfaces: ['social', 'network'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['social', 'network']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'X. It\u2019s what\u2019s happening / X'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Keep exactly one H1 per page; demote others to H2.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Work missing terms into title + H1 + first 100 words: ['social', 'network']. Then request re-indexing."
+  ]
+}

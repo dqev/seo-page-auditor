@@ -1,0 +1,144 @@
+{
+  "url": "https://nodejs.org/en",
+  "final_url": "https://nodejs.org/en",
+  "query": "node js runtime",
+  "score": 79,
+  "fetch": {
+    "title": "Node.js \u2014 Run JavaScript Everywhere",
+    "words": 280,
+    "chars": 1801,
+    "links_found": 49,
+    "html_chars": 1995,
+    "raw_html_chars": 531695,
+    "raw_h1": [
+      "Run JavaScript Everywhere"
+    ],
+    "fetch_h1": [
+      "Run JavaScript Everywhere"
+    ]
+  },
+  "search": {
+    "query": "node js runtime",
+    "rank": 1,
+    "matched_url": "https://nodejs.org/en",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Node.js",
+        "url": "https://nodejs.org/en"
+      },
+      {
+        "position": 2,
+        "title": "What is Node.js JavaScript Runtime and why does it ...",
+        "url": "https://www.reddit.com/r/techsupport/comments/yo46ua/what_is_nodejs_javascript_runtime_and_why_does_it/"
+      },
+      {
+        "position": 3,
+        "title": "Node.js",
+        "url": "https://en.wikipedia.org/wiki/Node.js"
+      },
+      {
+        "position": 4,
+        "title": "what exactly is NodeJs a runtime environment or a server?",
+        "url": "https://www.reddit.com/r/node/comments/1crrs0k/what_exactly_is_nodejs_a_runtime_environment_or_a/"
+      },
+      {
+        "position": 5,
+        "title": "What is Node.js? What is the JavaScript runtime explained?",
+        "url": "https://www.quora.com/What-is-Node-js-What-is-the-JavaScript-runtime-explained"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Node.js \u2014 Run JavaScript Everywhere'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 35 chars: 'Node.js \u2014 Run JavaScript Everywhere'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Run JavaScript Everywhere'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 280 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Node.js\u00ae is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web '.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://nodejs.org/en'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-GB' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 49 (internal\u224815, external\u224834).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~637 words but Fetch extracts 280 (56% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'node js runtime' \u2192 https://nodejs.org/en at position 1. Snippet: 'Node.js\u00ae is a free, open-source, cross-platform JavaScript runtime environment that lets developers create servers, web apps, command line t'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['node', 'runtime'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

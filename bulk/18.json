@@ -1,0 +1,148 @@
+{
+  "url": "https://www.npmjs.com",
+  "final_url": "https://www.npmjs.com/",
+  "query": "npm packages",
+  "score": 50,
+  "fetch": {
+    "title": "npm | Home",
+    "words": 154,
+    "chars": 896,
+    "links_found": 26,
+    "html_chars": 1001,
+    "raw_html_chars": 0,
+    "raw_h1": [
+      "Build amazing things"
+    ],
+    "fetch_h1": [
+      "Build amazing things"
+    ]
+  },
+  "search": {
+    "query": "npm packages",
+    "rank": 1,
+    "matched_url": "https://www.npmjs.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "npm | Home",
+        "url": "https://www.npmjs.com/"
+      },
+      {
+        "position": 2,
+        "title": "Npm",
+        "url": "https://en.wikipedia.org/wiki/Npm"
+      },
+      {
+        "position": 3,
+        "title": "An introduction to the npm package manager",
+        "url": "https://nodejs.org/learn/getting-started/an-introduction-to-the-npm-package-manager"
+      },
+      {
+        "position": 4,
+        "title": "What is NPM?",
+        "url": "https://xygeni.io/sscs-glossary/what-is-npm/"
+      },
+      {
+        "position": 5,
+        "title": "npm Commands Cheatsheet: List, Install, Update, and Fix ...",
+        "url": "https://last9.io/blog/npm-packages-cheatsheet/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'npm | Home'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 10 chars: 'npm | Home'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'npm | Home'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Build amazing things'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 154 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "FAIL",
+      "detail": "Meta description: ''.",
+      "fix": "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet."
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "FAIL",
+      "detail": "No <html lang> in raw HTML.",
+      "fix": "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 26 (internal\u224820, external\u22486).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 896 chars from 1001 chars cleaned HTML (ratio 0.90); raw ~154 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'npm packages' \u2192 https://www.npmjs.com/ at position 1. Snippet: 'The free npm Registry has become the center of JavaScript code sharing, and with more than two million packages, the largest software regist'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['packages'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'npm | Home'.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "url": "https://vercel.com",
+  "final_url": "https://vercel.com/",
+  "query": "vercel hosting",
+  "score": 64,
+  "fetch": {
+    "title": "Agentic Infrastructure - Vercel",
+    "words": 120,
+    "chars": 757,
+    "links_found": 167,
+    "html_chars": 1114,
+    "raw_html_chars": 629171,
+    "raw_h1": [
+      "Agentic Infrastructure"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "vercel hosting",
+    "rank": 1,
+    "matched_url": "https://vercel.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Vercel: Agentic Infrastructure",
+        "url": "https://vercel.com/"
+      },
+      {
+        "position": 2,
+        "title": "Why are people still hosting on Vercel? : r/nextjs",
+        "url": "https://www.reddit.com/r/nextjs/comments/1rr2d3j/why_are_people_still_hosting_on_vercel/"
+      },
+      {
+        "position": 3,
+        "title": "Host Your Website for FREE on Vercel in 5 Minutes",
+        "url": "https://www.youtube.com/watch?v=vKZrUR5GJuw"
+      },
+      {
+        "position": 4,
+        "title": "When to Host on Vercel and When Not (Buyer's Guide)",
+        "url": "https://focusreactive.com/when-to-host-on-vercel-and-when-not/"
+      },
+      {
+        "position": 5,
+        "title": "How, When, and Why you should switch from Vercel to a ...",
+        "url": "https://medium.com/@sushrit.pk21/how-when-and-why-you-should-switch-from-vercel-to-a-different-hosting-provider-especially-for-8ba25e439788"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Agentic Infrastructure - Vercel'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 31 chars: 'Agentic Infrastructure - Vercel'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Agentic Infrastructure'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 120 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'The autonomous stack for every app and agent.'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "19 img(s) in raw HTML, 3 missing alt.",
+      "fix": "Add descriptive alt to 3 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 3 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://vercel.com'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 167 (internal\u2248153, external\u224814).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~550 words but Fetch extracts 120 (78% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'vercel hosting' \u2192 https://vercel.com/ at position 1. Snippet: 'Agentic Infrastructure \u00b7 Build agents on infrastructure that thinks like them \u00b7 Ship apps that scale from zero to millions instantly \u00b7 Host '.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['vercel', 'hosting']. Missing from visible surfaces: ['hosting'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['hosting']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 3 image(s). AI tools + image search read alt, not pixels.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise.",
+    "Work missing terms into title + H1 + first 100 words: ['hosting']. Then request re-indexing."
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "url": "https://hi.wikipedia.org/wiki/\u092d\u093e\u0930\u0924",
+  "final_url": "https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4",
+  "query": "\u092d\u093e\u0930\u0924 \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e",
+  "score": 71,
+  "fetch": {
+    "title": "\u092d\u093e\u0930\u0924 - \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e",
+    "words": 13726,
+    "chars": 78276,
+    "links_found": 2791,
+    "html_chars": 90643,
+    "raw_html_chars": 1185848,
+    "raw_h1": [
+      "\u092d\u093e\u0930\u0924"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "\u092d\u093e\u0930\u0924 \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e",
+    "rank": 1,
+    "matched_url": "https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "\u092d\u093e\u0930\u0924",
+        "url": "https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+      },
+      {
+        "position": 2,
+        "title": "\u092d\u093e\u0930\u0924 - \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e",
+        "url": "https://bh.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+      },
+      {
+        "position": 3,
+        "title": "\u092d\u093e\u0930\u0924 - \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e",
+        "url": "https://awa.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4"
+      },
+      {
+        "position": 4,
+        "title": "India",
+        "url": "https://en.wikipedia.org/wiki/India"
+      },
+      {
+        "position": 5,
+        "title": "20 \u0915\u0930\u094b\u0921\u093c \u0938\u093e\u0932 \u092a\u0939\u0932\u0947 \u0915\u0948\u0938\u0947 \u092c\u0928\u093e \u0925\u093e \u0939\u092e\u093e\u0930\u093e \u092d\u093e\u0930\u0924 ? The Real Birth Story ...",
+        "url": "https://www.youtube.com/watch?v=wspYu9Evg2Y"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: '\u092d\u093e\u0930\u0924 - \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 17 chars: '\u092d\u093e\u0930\u0924 - \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: '\u092d\u093e\u0930\u0924 - \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['\u092d\u093e\u0930\u0924'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 13726 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "FAIL",
+      "detail": "Meta description: ''.",
+      "fix": "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet."
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "64 img(s) in raw HTML, 39 missing alt.",
+      "fix": "Add descriptive alt to 39 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='hi' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 2791 (internal\u22482223, external\u2248568).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 78276 chars from 90643 chars cleaned HTML (ratio 0.86); raw ~16948 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query '\u092d\u093e\u0930\u0924 \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e' \u2192 https://hi.wikipedia.org/wiki/%E0%A4%AD%E0%A4%BE%E0%A4%B0%E0%A4%A4 at position 1. Snippet: '\u092d\u093e\u0930\u0924 (\u0906\u0927\u093f\u0915\u093e\u0930\u093f\u0915 \u0928\u093e\u092e: \u092d\u093e\u0930\u0924 \u0917\u0923\u0930\u093e\u091c\u094d\u092f, \u0905\u0902\u0917\u094d\u0930\u0947\u091c\u093c\u0940: Republic of India , \u0932\u093f\u092a\u094d\u092f\u0928\u094d\u0924\u0930\u0923: \u0930\u093f\u092a\u092c\u094d\u0932\u093f\u0915\u094d \u0911\u092b\u093c\u094d ...'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms [] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: '\u092d\u093e\u0930\u0924 - \u0935\u093f\u0915\u093f\u092a\u0940\u0921\u093f\u092f\u093e'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet.",
+    "Add descriptive alt to 39 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

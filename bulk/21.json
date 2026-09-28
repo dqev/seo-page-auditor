@@ -1,0 +1,146 @@
+{
+  "url": "https://www.nytimes.com",
+  "final_url": "https://www.nytimes.com/",
+  "query": "new york times",
+  "score": 64,
+  "fetch": {
+    "title": "The New York Times - Breaking News, US News, World News and Videos",
+    "words": 481,
+    "chars": 2994,
+    "links_found": 118,
+    "html_chars": 4230,
+    "raw_html_chars": 0,
+    "raw_h1": [
+      "New York Times - Top Stories"
+    ],
+    "fetch_h1": [
+      "New York Times - Top Stories"
+    ]
+  },
+  "search": {
+    "query": "new york times",
+    "rank": 1,
+    "matched_url": "https://www.nytimes.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "The New York Times - Breaking News, US News, World News ...",
+        "url": "https://www.nytimes.com/"
+      },
+      {
+        "position": 2,
+        "title": "The New York Times",
+        "url": "https://en.wikipedia.org/wiki/The_New_York_Times"
+      },
+      {
+        "position": 3,
+        "title": "Games",
+        "url": "https://www.nytco.com/games/"
+      },
+      {
+        "position": 4,
+        "title": "The New York Times (@nytimes)",
+        "url": "https://www.instagram.com/nytimes/?hl=en"
+      },
+      {
+        "position": 5,
+        "title": "The New York Times (@nytimes)",
+        "url": "https://www.facebook.com/nytimes/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'The New York Times - Breaking News, US News, World News and Videos'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 66 chars: 'The New York Times - Breaking News, US News, World News and Videos'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'The New York Times - Breaking News, US News, World News and Videos'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['New York Times - Top Stories'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 481 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Live news, investigations, opinion, photos and video by the journalists of The New York Times from more than 150 countri'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "No <img> in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "FAIL",
+      "detail": "No <html lang> in raw HTML.",
+      "fix": "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 118 (internal\u2248116, external\u22482).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 2994 chars from 4230 chars cleaned HTML (ratio 0.71); raw ~481 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'new york times' \u2192 https://www.nytimes.com/ at position 1. Snippet: 'Live news, investigations, opinion, photos and video by the journalists of The New York Times from more than 150 countries around the world.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['york', 'times'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'The New York Times - Breaking News, US News, World News and Videos'.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Set <html lang=\"en\"> (or page language) for accessibility + language-targeted ranking."
+  ]
+}

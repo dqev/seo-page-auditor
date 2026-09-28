@@ -1,0 +1,153 @@
+{
+  "url": "https://www.python.org",
+  "final_url": "https://www.python.org/",
+  "query": "python programming language",
+  "score": 60,
+  "fetch": {
+    "title": "Welcome to Python.org",
+    "words": 232,
+    "chars": 1592,
+    "links_found": 212,
+    "html_chars": 2052,
+    "raw_html_chars": 53022,
+    "raw_h1": [
+      "Intuitive Interpretation",
+      "Compound Data Types",
+      "All the Flow You\u2019d Expect"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "python programming language",
+    "rank": 1,
+    "matched_url": "https://www.python.org/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Welcome to Python.org",
+        "url": "https://www.python.org/"
+      },
+      {
+        "position": 2,
+        "title": "What is Python, and why is it popular for programming?",
+        "url": "https://www.quora.com/What-is-Python-and-why-is-it-popular-for-programming"
+      },
+      {
+        "position": 3,
+        "title": "What does Python, the programming language, allow me to do and is it ...",
+        "url": "https://www.quora.com/What-does-Python-the-programming-language-allow-me-to-do-and-is-it-easy-to-learn"
+      },
+      {
+        "position": 4,
+        "title": "Python (programming language)",
+        "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+      },
+      {
+        "position": 5,
+        "title": "Introduction to Python",
+        "url": "https://www.w3schools.com/python/python_intro.asp"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Welcome to Python.org'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 21 chars: 'Welcome to Python.org'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Welcome to Python.org'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 ['Intuitive Interpretation', 'Compound Data Types', 'All the Flow You\u2019d Expect', 'Functions Defined', 'Quick & Easy to Learn'] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Single H1",
+      "status": "FAIL",
+      "detail": "5 H1s in raw HTML: ['Intuitive Interpretation', 'Compound Data Types', 'All the Flow You\u2019d Expect'].",
+      "fix": "Keep exactly one H1 per page; demote others to H2."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 232 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'The official home of the Python Programming Language'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "1 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 212 (internal\u2248172, external\u224840).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~1163 words but Fetch extracts 232 (80% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'python programming language' \u2192 https://www.python.org/ at position 1. Snippet: \"Python's convenience has made it the most popular language for machine learning and artificial intelligence. Python's flexibility has allowe\".",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['python', 'programming', 'language'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'Welcome to Python.org'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Keep exactly one H1 per page; demote others to H2.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}

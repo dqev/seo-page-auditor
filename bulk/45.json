@@ -1,0 +1,144 @@
+{
+  "url": "https://www.lemonde.fr",
+  "final_url": "https://www.lemonde.fr/en/",
+  "query": "lemonde actualites",
+  "score": 64,
+  "fetch": {
+    "title": "Le Monde - World news, culture and opinion from the unique perspective of the leading French newspaper",
+    "words": 198,
+    "chars": 1317,
+    "links_found": 256,
+    "html_chars": 1605,
+    "raw_html_chars": 226877,
+    "raw_h1": [
+      "'We have nothing, no safe place, no food': Yemen's humanitarian crisis is worsening"
+    ],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "lemonde actualites",
+    "rank": 1,
+    "matched_url": "https://www.lemonde.fr/actualite-en-continu/?srsltid=AU7gw4Uf4zA62GTlMXV-n74QP_o91NSWJgQwbLDk_-R-PSvYvS1JWC3J",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Toute l'actualit\u00e9 en continu",
+        "url": "https://www.lemonde.fr/actualite-en-continu/?srsltid=AU7gw4Uf4zA62GTlMXV-n74QP_o91NSWJgQwbLDk_-R-PSvYvS1JWC3J"
+      },
+      {
+        "position": 2,
+        "title": "Le Monde.fr - Actualit\u00e9s et Infos en France et dans le monde",
+        "url": "https://www.lemonde.fr/?srsltid=AU7gw4VjJUylPAsTPrVpFQaR8ON1s4eHEGhhm8OGeLCwNXaSpo9bBkL6"
+      },
+      {
+        "position": 3,
+        "title": "Le Monde in English \u2013 World news, culture and opinion",
+        "url": "https://www.lemonde.fr/en/?srsltid=AU7gw4UL64WU6mCLR3sbtjs4SIdItL9nlugew4sOTO0THlGzYTRUuNtA"
+      },
+      {
+        "position": 4,
+        "title": "International - Actualit\u00e9s, vid\u00e9os et infos en direct",
+        "url": "https://www.lemonde.fr/international/?srsltid=AU7gw4ULwmLKniY_FZJWCWINePZtoTACTLft4szOPhnyuWBaP0sXtBrL"
+      },
+      {
+        "position": 5,
+        "title": "Le Monde | Paris",
+        "url": "https://www.facebook.com/lemonde.fr/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Le Monde in English \u2013 World news, culture and opinion'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 53 chars: 'Le Monde in English \u2013 World news, culture and opinion'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "Raw HTML has H1 [\"'We have nothing, no safe place, no food': Yemen's humanitar\"] but Fetch extraction drops it \u2014 AI tools see no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 198 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: \"France's leading newspaper brings you the latest coverage from France, Europe, and all around the world, unique perspect\".",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "14 img(s) in raw HTML, 4 missing alt.",
+      "fix": "Add descriptive alt to 4 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://www.lemonde.fr/en/'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 256 (internal\u2248246, external\u224810).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~1562 words but Fetch extracts 198 (87% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'lemonde actualites' \u2192 https://www.lemonde.fr/actualite-en-continu/?srsltid=AU7gw4Uf4zA62GTlMXV-n74QP_o91NSWJgQwbLDk_-R-PSvYvS1JWC3J at position 1. Snippet: 'Suivez les actualit\u00e9s du jour et infos en direct sur Le Monde, retrouvez tous les articles du journal: International, France, Economie, Fait'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['lemonde', 'actualites']. Missing from visible surfaces: ['lemonde', 'actualites'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['lemonde', 'actualites']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add descriptive alt to 4 image(s). AI tools + image search read alt, not pixels.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise.",
+    "Work missing terms into title + H1 + first 100 words: ['lemonde', 'actualites']. Then request re-indexing."
+  ]
+}

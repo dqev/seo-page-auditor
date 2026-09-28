@@ -1,0 +1,143 @@
+{
+  "url": "https://linear.app",
+  "final_url": "https://linear.app/",
+  "query": "linear issue tracking",
+  "score": 86,
+  "fetch": {
+    "title": "Linear \u2013 The system for product development",
+    "words": 953,
+    "chars": 6778,
+    "links_found": 74,
+    "html_chars": 8055,
+    "raw_html_chars": 1287064,
+    "raw_h1": [
+      "The product development system for teams and agents The product development system for teams and agents The product development system for teams and agents"
+    ],
+    "fetch_h1": [
+      "The product development system for teams and agents"
+    ]
+  },
+  "search": {
+    "query": "linear issue tracking",
+    "rank": 1,
+    "matched_url": "https://linear.app/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Linear \u2013 The system for product development",
+        "url": "https://linear.app/"
+      },
+      {
+        "position": 2,
+        "title": "Linear's \u201cissue tracking is dead\u201d post makes me think ...",
+        "url": "https://www.reddit.com/r/Linear/comments/1s2mf7t/linears_issue_tracking_is_dead_post_makes_me/"
+      },
+      {
+        "position": 3,
+        "title": "Issue Tracking Is Dead",
+        "url": "https://news.ycombinator.com/item?id=47507253"
+      },
+      {
+        "position": 4,
+        "title": "Linear says Issue Tracking is Dead - by Rich Holmes",
+        "url": "https://departmentofproduct.substack.com/p/linear-says-issue-tracking-is-dead"
+      },
+      {
+        "position": 5,
+        "title": "Linear - Issue tracking & ticketing",
+        "url": "https://www.intercom.com/app-store/?app_package_code=linear-8uw0&category=issue-tracking"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Linear \u2013 The system for product development'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 43 chars: 'Linear \u2013 The system for product development'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['The product development system for teams and agents'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 953 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'Purpose-built for planning and building products with AI agents.'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "38 img(s) in raw HTML, 27 missing alt.",
+      "fix": "Add descriptive alt to 27 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://linear.app'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 74 (internal\u224870, external\u22484).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 6778 chars from 8055 chars cleaned HTML (ratio 0.84); raw ~1666 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'linear issue tracking' \u2192 https://linear.app/ at position 1. Snippet: 'Coding sessions are the shortest path from issue to diff. Assign a task to Linear Agent, and it works in a secure cloud environment to write'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['linear', 'issue', 'tracking'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Add descriptive alt to 27 image(s). AI tools + image search read alt, not pixels.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+  ]
+}

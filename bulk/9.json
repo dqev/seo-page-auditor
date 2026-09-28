@@ -1,0 +1,143 @@
+{
+  "url": "https://www.typescriptlang.org",
+  "final_url": "https://www.typescriptlang.org/",
+  "query": "typescript language",
+  "score": 86,
+  "fetch": {
+    "title": "JavaScript With Syntax For Types.",
+    "words": 684,
+    "chars": 4670,
+    "links_found": 52,
+    "html_chars": 7797,
+    "raw_html_chars": 258817,
+    "raw_h1": [
+      "TypeScript is JavaScript with syntax for types."
+    ],
+    "fetch_h1": [
+      "TypeScript is JavaScript with syntax for types."
+    ]
+  },
+  "search": {
+    "query": "typescript language",
+    "rank": 1,
+    "matched_url": "https://www.typescriptlang.org/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "TypeScript: JavaScript With Syntax For Types.",
+        "url": "https://www.typescriptlang.org/"
+      },
+      {
+        "position": 2,
+        "title": "TypeScript Introduction",
+        "url": "https://www.w3schools.com/typescript/typescript_intro.php"
+      },
+      {
+        "position": 3,
+        "title": "Which programming language is typescript developed?",
+        "url": "https://www.reddit.com/r/typescript/comments/wbkfsh/which_programming_language_is_typescript_developed/"
+      },
+      {
+        "position": 4,
+        "title": "TypeScript",
+        "url": "https://en.wikipedia.org/wiki/TypeScript"
+      },
+      {
+        "position": 5,
+        "title": "[AskJS] what IS typescript though?",
+        "url": "https://www.reddit.com/r/javascript/comments/1f0ee5i/askjs_what_is_typescript_though/"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'TypeScript: JavaScript With Syntax For Types.'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 45 chars: 'TypeScript: JavaScript With Syntax For Types.'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['TypeScript is JavaScript with syntax for types.'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 684 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: 'TypeScript extends JavaScript by adding types to the language. TypeScript speeds up your development experience by catch'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "3 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 52 (internal\u224829, external\u224823).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 4670 chars from 7797 chars cleaned HTML (ratio 0.60); raw ~925 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'typescript language' \u2192 https://www.typescriptlang.org/ at position 1. Snippet: 'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale. Try TypeScript Now. O'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['typescript', 'language'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+  ]
+}

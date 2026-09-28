@@ -1,0 +1,143 @@
+{
+  "url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "final_url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "query": "python wikipedia",
+  "score": 86,
+  "fetch": {
+    "title": "Python (programming language) - Wikipedia",
+    "words": 12480,
+    "chars": 82038,
+    "links_found": 2235,
+    "html_chars": 95385,
+    "raw_html_chars": 1010191,
+    "raw_h1": [
+      "Python (programming language)"
+    ],
+    "fetch_h1": [
+      "Example output:"
+    ]
+  },
+  "search": {
+    "query": "python wikipedia",
+    "rank": 1,
+    "matched_url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Python (programming language)",
+        "url": "https://en.wikipedia.org/wiki/Python_(programming_language)"
+      },
+      {
+        "position": 2,
+        "title": "Python (genus)",
+        "url": "https://en.wikipedia.org/wiki/Python_(genus)"
+      },
+      {
+        "position": 3,
+        "title": "Python Wiki: FrontPage",
+        "url": "https://wiki.python.org/"
+      },
+      {
+        "position": 4,
+        "title": "wikipedia",
+        "url": "https://pypi.org/project/wikipedia/"
+      },
+      {
+        "position": 5,
+        "title": "Python",
+        "url": "https://en.wikipedia.org/wiki/Python"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Python (programming language) - Wikipedia'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 41 chars: 'Python (programming language) - Wikipedia'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "PASS",
+      "detail": "Found 1 H1(s): ['Example output:'].",
+      "fix": ""
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 12480 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "FAIL",
+      "detail": "Meta description: ''.",
+      "fix": "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet."
+    },
+    {
+      "check": "Images have alt text",
+      "status": "FAIL",
+      "detail": "28 img(s) in raw HTML, 14 missing alt.",
+      "fix": "Add descriptive alt to 14 image(s). AI tools + image search read alt, not pixels."
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "PASS",
+      "detail": "Found 1 JSON-LD block(s) in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "Canonical tag",
+      "status": "PASS",
+      "detail": "Canonical: 'https://en.wikipedia.org/wiki/Python_(programming_language)'.",
+      "fix": ""
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "PASS",
+      "detail": "og:* tags present in raw HTML.",
+      "fix": ""
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 2235 (internal\u22481694, external\u2248541).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 82038 chars from 95385 chars cleaned HTML (ratio 0.86); raw ~15716 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'python wikipedia' \u2192 https://en.wikipedia.org/wiki/Python_(programming_language) at position 1. Snippet: 'Python is a high-level, general-purpose programming language that emphasizes code readability, simplicity, and ease-of-writing with the use '.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['python', 'wikipedia'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet.",
+    "Add descriptive alt to 14 image(s). AI tools + image search read alt, not pixels."
+  ]
+}

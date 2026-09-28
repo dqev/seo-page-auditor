@@ -1,0 +1,144 @@
+{
+  "url": "https://arxiv.org",
+  "final_url": "https://arxiv.org/",
+  "query": "arxiv papers",
+  "score": 50,
+  "fetch": {
+    "title": "arXiv.org e-Print archive",
+    "words": 616,
+    "chars": 5295,
+    "links_found": 257,
+    "html_chars": 6059,
+    "raw_html_chars": 38051,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "arxiv papers",
+    "rank": 1,
+    "matched_url": "https://arxiv.org/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "arXiv.org e-Print archive",
+        "url": "https://arxiv.org/"
+      },
+      {
+        "position": 2,
+        "title": "alphaXiv: Explore",
+        "url": "https://www.alphaxiv.org/"
+      },
+      {
+        "position": 3,
+        "title": "arXiv.org - Engineering Library - Cornell University",
+        "url": "https://engineering.library.cornell.edu/database/arxiv-org/"
+      },
+      {
+        "position": 4,
+        "title": "arXiv",
+        "url": "https://en.wikipedia.org/wiki/ArXiv"
+      },
+      {
+        "position": 5,
+        "title": "CShorten/ML-ArXiv-Papers \u00b7 Datasets at Hugging Face",
+        "url": "https://huggingface.co/datasets/CShorten/ML-ArXiv-Papers"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'arXiv.org e-Print archive'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "FAIL",
+      "detail": "Title is 25 chars: 'arXiv.org e-Print archive'.",
+      "fix": "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'arXiv.org e-Print archive'."
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "PASS",
+      "detail": "Fetch extracted 616 words.",
+      "fix": ""
+    },
+    {
+      "check": "Meta description present",
+      "status": "FAIL",
+      "detail": "Meta description: ''.",
+      "fix": "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet."
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "4 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 257 (internal\u2248254, external\u22483).",
+      "fix": ""
+    },
+    {
+      "check": "Content in initial HTML (not JS-only)",
+      "status": "PASS",
+      "detail": "Extracted 5295 chars from 6059 chars cleaned HTML (ratio 0.87); raw ~905 words.",
+      "fix": ""
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'arxiv papers' \u2192 https://arxiv.org/ at position 1. Snippet: 'arXiv is a free distribution service and an open-access archive for nearly ... About arXiv. General information \u00b7 How to Submit to arXiv \u00b7 M'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "FAIL",
+      "detail": "Query terms: ['arxiv', 'papers']. Missing from visible surfaces: ['papers'].",
+      "fix": "Work missing terms into title + H1 + first 100 words: ['papers']. Then request re-indexing."
+    }
+  ],
+  "fixes": [
+    "Rewrite title to 30\u201360 chars. Keep query near front. Current: 'arXiv.org e-Print archive'.",
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Add <meta name=\"description\" content=\"...query-led 140\u2013160 chars...\">. Controls the search snippet.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Work missing terms into title + H1 + first 100 words: ['papers']. Then request re-indexing."
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "url": "https://caniuse.com",
+  "final_url": "https://caniuse.com/#search=word-",
+  "query": "browser support tables",
+  "score": 57,
+  "fetch": {
+    "title": "Can I use... Support tables for HTML5, CSS3, etc",
+    "words": 191,
+    "chars": 1107,
+    "links_found": 46,
+    "html_chars": 1621,
+    "raw_html_chars": 19125,
+    "raw_h1": [],
+    "fetch_h1": []
+  },
+  "search": {
+    "query": "browser support tables",
+    "rank": 1,
+    "matched_url": "https://caniuse.com/",
+    "top_results": [
+      {
+        "position": 1,
+        "title": "Can I use... Support tables for HTML5, CSS3, etc",
+        "url": "https://caniuse.com/"
+      },
+      {
+        "position": 2,
+        "title": "supports CSS at-rule - MDN Web Docs - Mozilla",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@supports"
+      },
+      {
+        "position": 3,
+        "title": "CSS Browser Support Reference",
+        "url": "https://www.w3schools.com/cssref/css3_browsersupport.php"
+      },
+      {
+        "position": 4,
+        "title": "Browsers which do not support HTML <table> tag?",
+        "url": "https://stackoverflow.com/questions/9307191/browsers-which-do-not-support-html-table-tag"
+      },
+      {
+        "position": 5,
+        "title": "Browser Compatibility tables and Browser Compatibility Data ...",
+        "url": "https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Page_structures/Compatibility_tables"
+      }
+    ]
+  },
+  "agent_comparison": null,
+  "checks": [
+    {
+      "check": "AI-extractable title",
+      "status": "PASS",
+      "detail": "Fetch title: 'Can I use... Support tables for HTML5, CSS3, etc'",
+      "fix": ""
+    },
+    {
+      "check": "Title length 30\u201360 chars",
+      "status": "PASS",
+      "detail": "Title is 48 chars: 'Can I use... Support tables for HTML5, CSS3, etc'.",
+      "fix": ""
+    },
+    {
+      "check": "AI-visible H1",
+      "status": "FAIL",
+      "detail": "No H1 in raw HTML either \u2014 page truly has no H1.",
+      "fix": "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML."
+    },
+    {
+      "check": "Extracted body \u2265300 words (not thin to AI)",
+      "status": "FAIL",
+      "detail": "Fetch extracted 191 words.",
+      "fix": "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises."
+    },
+    {
+      "check": "Meta description present",
+      "status": "PASS",
+      "detail": "Meta description: '\"Can I use\" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile w'.",
+      "fix": ""
+    },
+    {
+      "check": "Images have alt text",
+      "status": "PASS",
+      "detail": "2 img(s) in raw HTML, 0 missing alt.",
+      "fix": ""
+    },
+    {
+      "check": "Structured data (JSON-LD)",
+      "status": "FAIL",
+      "detail": "No application/ld+json in raw HTML (Fetch extraction also drops it \u2014 AI can't see entities).",
+      "fix": "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly."
+    },
+    {
+      "check": "Canonical tag",
+      "status": "FAIL",
+      "detail": "No rel=canonical in raw HTML.",
+      "fix": "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals."
+    },
+    {
+      "check": "Open Graph tags (link previews / AI citations)",
+      "status": "FAIL",
+      "detail": "No og:* tags in raw HTML (Fetch strips head tags, so AI citations fall back to title-only).",
+      "fix": "Add og:title/description/image + twitter:card so shares and AI citations render correctly."
+    },
+    {
+      "check": "html lang attribute",
+      "status": "PASS",
+      "detail": "lang='en-US' (raw HTML).",
+      "fix": ""
+    },
+    {
+      "check": "Outbound/internal link graph",
+      "status": "PASS",
+      "detail": "Fetch links: 46 (internal\u224821, external\u224825).",
+      "fix": ""
+    },
+    {
+      "check": "Fetch keeps page copy (no extraction drop)",
+      "status": "FAIL",
+      "detail": "Raw HTML holds ~463 words but Fetch extracts 191 (59% dropped). Copy exists yet never reaches AI readers \u2014 hero is likely canvas/animated/shadow-DOM markup.",
+      "fix": "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+    },
+    {
+      "check": "Indexed & ranking for query (pos 1)",
+      "status": "PASS",
+      "detail": "Query 'browser support tables' \u2192 https://caniuse.com/ at position 1. Snippet: '\"Can I use\" provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.'.",
+      "fix": ""
+    },
+    {
+      "check": "Query terms in snippet/title/H1",
+      "status": "PASS",
+      "detail": "All key terms ['browser', 'support', 'tables'] appear in title/snippet/body.",
+      "fix": ""
+    }
+  ],
+  "fixes": [
+    "Server-render one H1 containing the target query. If hero is client-rendered, move H1 to SSR HTML.",
+    "Expand real content to \u2265300 words of extracted text (not nav/footer): answer the query, add steps/examples/FAQ. Re-run audit to confirm word count rises.",
+    "Add JSON-LD (Article/Product/FAQ/Breadcrumb as fitting) so AI answers can cite entities correctly.",
+    "Add <link rel=\"canonical\" href=\"<preferred URL>\"> to consolidate ranking signals.",
+    "Add og:title/description/image + twitter:card so shares and AI citations render correctly.",
+    "Put key copy in plain <h1>/<p> in the DOM (not canvas, text-as-image, or JS-injected widgets). Re-run audit to confirm extracted words rise."
+  ]
+}
